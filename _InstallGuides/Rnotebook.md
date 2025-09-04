@@ -34,26 +34,11 @@ If Jupyter is not installed, install it:
    R --version
    ```
 
-## Step 3: Install IRkernel
+## Step 3: Install IRkernel (run in admin console)
 
-1. Open R console (type `R` in terminal/command prompt)
-2. Install required packages:
-   ```r
-   install.packages(c('IRkernel', 'devtools'))
-   ```
-3. Install the kernel spec:
-   ```r
-   IRkernel::installspec()
-   ```
-4. Exit R:
-   ```r
-   quit()
-   ```
-
-### Alternative Installation (if above fails)
-```r
-install.packages('IRkernel')
-IRkernel::installspec(user = FALSE)  # system-wide installation
+Run this single command in an admin Command Prompt:
+```
+R -e "install.packages('IRkernel', repos='https://cloud.r-project.org/'); IRkernel::installspec(user = FALSE)"
 ```
 
 ## Step 4: Verify Everything Works
