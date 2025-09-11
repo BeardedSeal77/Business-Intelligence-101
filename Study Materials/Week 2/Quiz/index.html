@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Comprehensive Quiz — Data Mining & R (All-in-One)</title>
+<style>
+  :root{
+    --bg:#0c0f14;
+    --panel:#121826;
+    --ink:#e6e6ea;
+    --muted:#aab2c8;
+    --accent:#7aa2ff;
+    --good:#1fbf75;
+    --bad:#ff5d5d;
+    --warn:#e3b341;
+    --border:#233044;
+  }
+  html,body{background:var(--bg); color:var(--ink); margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;}
+  .wrap{max-width:1100px; margin:40px auto; padding:0 16px 80px;}
+  h1{font-size:28px; margin:0 0 6px;}
+  .sub{color:var(--muted); margin:0 0 24px;}
+  .card{
+    background:linear-gradient(180deg, #121826, #0f1522);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:18px 20px;
+    margin:14px 0;
+    box-shadow:0 8px 24px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.02);
+  }
+  .qhead{display:flex; gap:10px; align-items:baseline; flex-wrap:wrap}
+  .qnum{font-weight:700; color:#cbd6ff;}
+  .qtype{font-size:12px; color:var(--muted); padding:2px 8px; border:1px solid var(--border); border-radius:999px;}
+  .qtext{margin:10px 0 10px; line-height:1.5}
+  .opts{display:grid; gap:10px; margin:12px 0;}
+  .opt{
+    display:flex; gap:10px; align-items:flex-start; padding:10px 12px; border:1px solid var(--border);
+    border-radius:10px; background:#0d1320; transition:background .2s,border-color .2s;
+  }
+  .opt input[type="checkbox"]{margin-top:3px; width:18px; height:18px; accent-color:var(--accent);}
+  .codebox{width:100%; min-height:90px; padding:10px 12px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+           background:#0a0f1b; color:#e9f1ff; border:1px solid var(--border); border-radius:10px; resize:vertical;}
+  .actions{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:12px;}
+  .btn{
+    border:1px solid #2c3b55; background:#162136; color:#e9f1ff; padding:8px 12px; border-radius:12px; cursor:pointer;
+    transition:transform .04s ease, background .2s;
+  }
+  .btn:hover{background:#1a2946}
+  .btn:active{transform:translateY(1px)}
+  .result{margin-top:10px; font-weight:600}
+  .correct{color:var(--good)}
+  .incorrect{color:var(--bad)}
+  .explain{margin-top:6px; color:#9fc4ff}
+  .pill{display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; border:1px solid var(--border); color:var(--muted);}
+  .section-title{margin-top:36px; font-size:22px;}
+  .footer{margin-top:26px; color:var(--muted); font-size:13px;}
+  .mutual-note{font-size:12px; color:var(--muted); margin-top:-4px;}
+  .legend{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:8px 0 16px}
+  .legend .chip{font-size:12px; padding:4px 8px; border-radius:999px; border:1px solid var(--border); color:var(--muted)}
+  .tag{font-size:11px; padding:2px 6px; border-radius:6px; border:1px solid var(--border); color:#b7c4ff; margin-left:6px;}
+  .hr{height:1px; background:linear-gradient(90deg, transparent, #2a3956, transparent); margin:20px 0;}
+  .kbd{font-family:ui-monospace,Consolas,monospace; font-size:12px; color:#cfe0ff; background:#111726; padding:1px 6px; border-radius:6px; border:1px solid var(--border);}
+  @media (max-width:700px){ .opt{flex-direction:row} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Comprehensive Quiz — Data Mining Functionalities, Frequent Patterns & R Data Structures</h1>
+  <p class="sub">Select answers using checkboxes (MCQ and True/False). For code questions, type your R code. Click <b>Check Answer</b> per question to get instant feedback.</p>
+
+  <div class="legend">
+    <span class="chip">Feedback: <span style="color:#1fbf75">green</span> = correct, <span style="color:#ff5d5d">red</span> = wrong, <span style="color:#7aa2ff">blue</span> = correct answer + explanation</span>
+    <span class="chip">Theme: Dark</span>
+  </div>
+
+  <div id="quiz"></div>
+
+  <div class="footer">
+    Built to cover: Data Mining Functionalities (Day 1), Mining Frequent Patterns, Associations &amp; Correlations (Days 1, 3, 4), and R Data Structures (Day 2).
+  </div>
+</div>
+
+<script>
+/* -----------------------------
+   Question Data
+   ----------------------------- */
+
+// Multiple Choice (1–25). Each has choices and exactly one correct index.
+const mcq = [
+  { q: "Which best defines data mining?", choices: ["Extracting raw data from databases","Transforming unstructured data into SQL queries","Discovering hidden, useful patterns from large datasets","Creating dashboards and reports"], correct:[2],
+    why:"Data mining is about discovering non-trivial, useful patterns from large datasets (not merely extraction or visualization)."},
+  { q: "Which list correctly outlines the KDD process?", choices: ["Data Visualization only","Data Cleaning, Integration, Selection, Transformation, Mining, Evaluation, Presentation","Only Data Mining","Sampling without preprocessing"], correct:[1],
+    why:"KDD includes cleaning → integration → selection → transformation → mining → evaluation → presentation."},
+  { q: "Which is a descriptive data mining task?", choices:["Classification","Clustering","Prediction","Regression"], correct:[1],
+    why:"Clustering summarizes/segments data (descriptive). Classification/prediction/regression are predictive."},
+  { q: "In association mining, support measures:", choices:["P(B|A)","The frequency of itemset occurrence in the dataset","Classification accuracy","Novelty of a pattern"], correct:[1],
+    why:"Support is the proportion of transactions that contain an itemset."},
+  { q: "Confidence in association rules equals:", choices:["P(A∪B)","P(A)/P(B)","P(B|A)","1 – Support"], correct:[2],
+    why:"Confidence(A→B)=P(B|A), the probability B occurs when A occurs."},
+  { q: "Which algorithm is used for frequent itemset mining?", choices:["Decision Tree","Apriori","K-Means","Naïve Bayes"], correct:[1],
+    why:"Apriori is the classic algorithm for mining frequent itemsets and association rules."},
+  { q: "Apriori property states:", choices:["All supersets of a frequent itemset must be frequent","All nonempty subsets of a frequent itemset must also be frequent","Support is always > confidence","Confidence must equal Lift"], correct:[1],
+    why:"If an itemset is frequent, all its nonempty subsets are also frequent (anti-monotonicity)."},
+  { q: "Lift = 1 means:", choices:["Positive correlation","Independence","Negative correlation","Always uninteresting"], correct:[1],
+    why:"Lift of 1 indicates independence between A and B."},
+  { q: "Which correlation measure tests independence via contingency tables?", choices:["Lift","Chi-Square (χ²)","All-confidence","Support"], correct:[1],
+    why:"Chi-square assesses independence by comparing observed vs expected frequencies."},
+  { q: "Which is NOT an Apriori efficiency improvement?", choices:["Hash-based pruning","Partitioning","Sampling","Logistic regression"], correct:[3],
+    why:"Logistic regression is a modeling technique, not an Apriori speed-up strategy."},
+  { q: "FP-Growth differs from Apriori because it:", choices:["Generates candidates more efficiently","Avoids candidate generation using FP-trees","Uses regression","Computes confidence directly"], correct:[1],
+    why:"FP-Growth compresses the DB into an FP-tree and mines without candidate generation."},
+  { q: "Vertical data format represents:", choices:["TID → Itemset","Item → TID set","Row → Column","Cluster → Data points"], correct:[1],
+    why:"Vertical format stores, for each item, the set of TIDs containing it; supports set intersections."},
+  { q: "Outlier analysis is most crucial for:", choices:["Fraud detection","Clustering","Regression","Factor analysis"], correct:[0],
+    why:"Outliers often indicate anomalies, e.g., fraudulent transactions."},
+  { q: "Which is TRUE about R factors?", choices:["They only store numeric values","They encode categorical variables with levels","They cannot be ordered","They automatically drop unused levels"], correct:[1],
+    why:"Factors encode categorical data with levels; they can be ordered and do not auto-drop unused levels."},
+  { q: "Convert a variable to a factor in R:", choices:["as.character()","factor() / as.factor()","cut()","ordered()"], correct:[1],
+    why:"Use factor() or as.factor() to create factors; cut() bins numeric, ordered() sets ordinal."},
+  { q: "In R, 0/0 results in:", choices:["0","NA","NaN","Inf"], correct:[2],
+    why:"0 divided by 0 is undefined numeric (NaN)."},
+  { q: "R logicals TRUE/FALSE are coded as:", choices:["2 and 3","0 and 1","-1 and 1","None of the above"], correct:[1],
+    why:"Internally, TRUE=1 and FALSE=0 in many contexts (e.g., sum(TRUE,FALSE))."},
+  { q: "Detect missing values in R:", choices:["is.na()","missing()","is.null()","any()"], correct:[0],
+    why:"is.na() flags NA (and NaN) elements as missing."},
+  { q: "droplevels() in R:", choices:["Removes NA values","Drops unused factor levels","Drops columns","Removes duplicates"], correct:[1],
+    why:"droplevels() removes levels not present in the current data."},
+  { q: "paste0(\"A\",\"B\") returns:", choices:["\"A B\"","\"A-B\"","\"AB\"","Error"], correct:[2],
+    why:"paste0 concatenates without a separator."},
+  { q: "Count TRUEs in a logical vector:", choices:["count()","sum()","length()","mean()"], correct:[1],
+    why:"sum(TRUE/FALSE) returns the count of TRUE (since TRUE==1, FALSE==0)."},
+  { q: "grep(\"Port\", cities, value=TRUE) returns:", choices:["Indices","Matching elements","Non-matching elements","Logical vector"], correct:[1],
+    why:"With value=TRUE, grep returns the matching strings themselves."},
+  { q: "Constraint-based mining means:", choices:["Set only minimum support","Specify user expectations and rule forms","Drop unused factor levels","Use FP-Growth"], correct:[1],
+    why:"Users specify constraints/expectations to focus the search and improve relevance."},
+  { q: "Change data frame column names in R using:", choices:["names()","colnames()","setNames()","All of the above"], correct:[3],
+    why:"All three are valid ways to set names in base R contexts."},
+  { q: "A metarule is:", choices:["A predefined SQL query","A general template for mining rules","A factor with predefined levels","A regression model"], correct:[1],
+    why:"Metarules define the syntactic form/templates of rules to mine."}
+];
+
+// True/False (26–40). Use two checkboxes; we enforce mutual exclusion.
+const tfs = [
+  { q:"Data mining and statistics are exactly the same.", correct:[1], tf:["True","False"],
+    why:"They overlap but are not identical: data mining is exploratory on large observational data; statistics is often confirmatory/hypothesis-driven."},
+  { q:"Classification predicts categorical labels, while prediction estimates numeric values.", correct:[0], tf:["True","False"],
+    why:"Classification → categorical; prediction/regression → numeric."},
+  { q:"FP-Growth uses candidate generation like Apriori.", correct:[1], tf:["True","False"],
+    why:"FP-Growth avoids candidate generation by using an FP-tree."},
+  { q:"Lift < 1 indicates a positive correlation between items.", correct:[1], tf:["True","False"],
+    why:"Lift<1 implies negative correlation; >1 implies positive; =1 independence."},
+  { q:"Partitioning can enable frequent itemset mining with only two database scans.", correct:[0], tf:["True","False"],
+    why:"Partition-based algorithms typically need two scans: local mining and global verification."},
+  { q:"In R, NA and NaN are identical and interchangeable.", correct:[1], tf:["True","False"],
+    why:"Both are missing-like, but NaN is a kind of NA; is.nan() distinguishes them."},
+  { q:"is.nan() returns TRUE for NA values.", correct:[1], tf:["True","False"],
+    why:"is.nan(NA) is FALSE. is.na() covers both NA and NaN."},
+  { q:"Factors in R can be ordered (ordinal).", correct:[0], tf:["True","False"],
+    why:"Use ordered() or factor(..., ordered=TRUE)."},
+  { q:"cut() can convert numeric data into categorical bins.", correct:[0], tf:["True","False"],
+    why:"cut() bins numeric values into intervals, returning a factor."},
+  { q:"In R, Inf and -Inf are valid values representing infinities.", correct:[0], tf:["True","False"],
+    why:"They represent positive/negative infinity (e.g., 1/0 == Inf in R)."},
+  { q:"anyNA(x) returns TRUE if at least one missing value exists.", correct:[0], tf:["True","False"],
+    why:"anyNA is a fast way to check for any NA/NaN in an object."},
+  { q:"paste() inserts a space by default between arguments.", correct:[0], tf:["True","False"],
+    why:"paste(..., sep=' ') by default; paste0 has no separator."},
+  { q:"complete.cases(df) identifies rows with no missing values.", correct:[0], tf:["True","False"],
+    why:"TRUE for rows that are fully observed."},
+  { q:"Correlation analysis can reveal negative correlations missed by support-confidence alone.", correct:[0], tf:["True","False"],
+    why:"Support-confidence doesn’t measure independence/association strength like lift or chi-square."},
+  { q:"Metarule-guided mining is less efficient than unconstrained mining.", correct:[1], tf:["True","False"],
+    why:"Guiding by metarules narrows the search, improving efficiency and relevance."}
+];
+
+// Code questions (41–50). We'll accept via regex patterns; show canonical answer in feedback.
+const code = [
+  { q:"Create an ordered factor `sizes` with values small, medium, large in that order.",
+    patterns:[
+      /sizes\s*<-\s*ordered\s*\(\s*c?\s*\(\s*"?small"?\s*,\s*"?medium"?\s*,\s*"?large"?\s*\)\s*,\s*levels\s*=\s*c\s*\(\s*"?small"?\s*,\s*"?medium"?\s*,\s*"?large"?\s*\)\s*\)/is,
+      /sizes\s*<-\s*factor\s*\(\s*c?\s*\(\s*"?small"?\s*,\s*"?medium"?\s*,\s*"?large"?\s*\)\s*,\s*levels\s*=\s*c\s*\(\s*"?small"?\s*,\s*"?medium"?\s*,\s*"?large"?\s*\)\s*,\s*ordered\s*=\s*TRUE\s*\)/is
+    ],
+    answer:`sizes <- ordered(c("small","medium","large"), levels = c("small","medium","large"))`,
+    why:"Use ordered() or factor(..., ordered=TRUE) with explicit level order."},
+  { q:"Given x <- c(1, 2, NA, 4, NaN, Inf), count how many values are missing (NA or NaN).",
+    patterns:[/sum\s*\(\s*is\.na\s*\(\s*x\s*\)\s*\)\s*/is],
+    answer:`sum(is.na(x))`,
+    why:"is.na() is TRUE for NA and NaN; sum(...) counts them."},
+  { q:"Create data frame age(21,35,50), gender(F,M,F). Add factor age_group with <30, 30-39, 40+ using cut().",
+    patterns:[
+      /data\.frame.*age.*21.*35.*50.*gender.*F.*M.*F/si,
+      /cut\s*\(\s*.*age.*breaks\s*=\s*c\s*\(\s*0\s*,\s*30\s*,\s*40\s*,\s*Inf\s*\)\s*,\s*labels\s*=\s*c\s*\(\s*"?<30"?\s*,\s*"?30-39"?\s*,\s*"?40\+"?\s*\)\s*/si
+    ],
+    answer:`df <- data.frame(age=c(21,35,50), gender=factor(c("F","M","F")))\ndf$age_group <- cut(df$age, breaks=c(0,30,40,Inf), labels=c("<30","30-39","40+"), include.lowest=TRUE)`,
+    why:"Define the data frame then bin ages into factor levels via cut()."},
+  { q:"Drop unused levels from factor species.",
+    patterns:[/droplevels\s*\(\s*species\s*\)/is, /species\s*<-\s*droplevels\s*\(\s*species\s*\)/is],
+    answer:`species <- droplevels(species)`,
+    why:"droplevels() removes levels not present after subsetting."},
+  { q:"Count number of TRUE in logical vector v.",
+    patterns:[/sum\s*\(\s*v\s*\)/is],
+    answer:`sum(v)`,
+    why:"TRUE counts as 1; sum(v) counts TRUEs."},
+  { q:"Compute mean of scores <- c(55, 67, 72, NA, 80) ignoring missing values.",
+    patterns:[/mean\s*\(\s*scores\s*,\s*na\.rm\s*=\s*TRUE\s*\)/is],
+    answer:`mean(scores, na.rm = TRUE)`,
+    why:"Use na.rm=TRUE to ignore NAs."},
+  { q:"Find city names starting with 'P' in cities <- c('Pretoria','Cape Town','Port Elizabeth','Durban').",
+    patterns:[/grep\s*\(\s*["']\^P["']\s*,\s*cities\s*,\s*value\s*=\s*TRUE\s*\)/is],
+    answer:`grep("^P", cities, value = TRUE)`,
+    why:"grep with regex ^P matches strings starting with P; value=TRUE returns strings."},
+  { q:"Replace all -99 with NA in numeric vector temp.",
+    patterns:[/temp\s*\[\s*temp\s*==\s*-?99\s*\]\s*<-\s*NA/is],
+    answer:`temp[temp == -99] <- NA`,
+    why:"Use logical indexing to assign NA."},
+  { q:"Create IDs 'ID1'...'ID5' with paste0.",
+    patterns:[/paste0\s*\(\s*["']ID["']\s*,\s*1:5\s*\)/is],
+    answer:`paste0("ID", 1:5)`,
+    why:"paste0 concatenates without a separator."},
+  { q:"Rename df columns from height, weight to Height_cm, Weight_kg.",
+    patterns:[
+      /names\s*\(\s*df\s*\)\s*<-\s*c\s*\(\s*["']Height_cm["']\s*,\s*["']Weight_kg["']\s*\)/is,
+      /colnames\s*\(\s*df\s*\)\s*<-\s*c\s*\(\s*["']Height_cm["']\s*,\s*["']Weight_kg["']\s*\)/is
+    ],
+    answer:`names(df) <- c("Height_cm","Weight_kg")`,
+    why:"Use names() or colnames() to set new column names."
+  }
+];
+
+/* -----------------------------
+   Rendering
+   ----------------------------- */
+
+const quizEl = document.getElementById('quiz');
+
+function createCard() {
+  const card = document.createElement('div');
+  card.className = 'card';
+  return card;
+}
+function createBtn(label) {
+  const btn = document.createElement('button');
+  btn.className = 'btn';
+  btn.textContent = label;
+  return btn;
+}
+function setResult(el, ok, text, answer, why) {
+  el.innerHTML = '';
+  const r = document.createElement('div');
+  r.className = 'result ' + (ok ? 'correct':'incorrect');
+  r.textContent = ok ? 'Correct!' : 'Incorrect.';
+  el.appendChild(r);
+  if (!ok) {
+    const exp = document.createElement('div');
+    exp.className = 'explain';
+    exp.innerHTML = `<b>Answer:</b> ${answer ? sanitize(answer) : ''}${answer ? '<br/>' : ''}${why ? sanitize(why) : ''}`;
+    el.appendChild(exp);
+  } else {
+    const exp = document.createElement('div');
+    exp.className = 'explain';
+    exp.innerHTML = why ? sanitize(why) : '';
+    el.appendChild(exp);
+  }
+}
+function sanitize(s){ return (s||'').toString()
+  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+  .replace(/"/g,'&quot;'); }
+
+/* MCQ */
+function renderMCQ() {
+  const title = document.createElement('h2'); title.className='section-title'; title.textContent='Section A: Multiple Choice (25 Questions)';
+  quizEl.appendChild(title);
+  mcq.forEach((item, i) => {
+    const card = createCard();
+    const head = document.createElement('div'); head.className='qhead';
+    head.innerHTML = `<span class="qnum">Q${i+1}</span><span class="qtype">Multiple Choice</span>`;
+    const text = document.createElement('div'); text.className='qtext'; text.textContent = item.q;
+    const opts = document.createElement('div'); opts.className='opts';
+
+    item.choices.forEach((opt, idx) => {
+      const row = document.createElement('label'); row.className='opt';
+      const cb = document.createElement('input'); cb.type='checkbox';
+      cb.dataset.group = 'mcq'+(i+1);
+      cb.addEventListener('change', (e) => {
+        // enforce "select at most one" within MCQ group of checkboxes
+        document.querySelectorAll(`input[type="checkbox"][data-group="mcq${i+1}"]`).forEach(box=>{
+          if (box!==cb) box.checked=false;
+        });
+      });
+      const span = document.createElement('div'); span.innerHTML = sanitize(opt);
+      row.appendChild(cb); row.appendChild(span); opts.appendChild(row);
+    });
+
+    const actions = document.createElement('div'); actions.className='actions';
+    const note = document.createElement('div'); note.className='mutual-note'; note.textContent='(Select exactly one option.)';
+    const btn = createBtn('Check Answer');
+    const res = document.createElement('div'); res.className='result';
+
+    btn.addEventListener('click', () => {
+      const boxes = [...opts.querySelectorAll('input[type=checkbox]')];
+      const chosenIdx = boxes.findIndex(b=>b.checked);
+      const correctIdx = item.correct[0];
+      const ok = (chosenIdx === correctIdx);
+      const letters = ['A','B','C','D'];
+      const answerText = letters[correctIdx] + '. ' + item.choices[correctIdx];
+      setResult(res, ok, null, answerText, item.why);
+      card.style.borderColor = ok ? 'rgba(31,191,117,.6)' : 'rgba(255,93,93,.5)';
+    });
+
+    actions.appendChild(btn);
+    card.appendChild(head); card.appendChild(text); card.appendChild(opts); card.appendChild(note); card.appendChild(actions); card.appendChild(res);
+    quizEl.appendChild(card);
+  });
+}
+
+/* True/False */
+function renderTF() {
+  const title = document.createElement('h2'); title.className='section-title'; title.textContent='Section B: True / False (15 Questions)';
+  quizEl.appendChild(title);
+  tfs.forEach((item, j) => {
+    const idx = j + mcq.length + 1;
+    const card = createCard();
+    const head = document.createElement('div'); head.className='qhead';
+    head.innerHTML = `<span class="qnum">Q${idx}</span><span class="qtype">True / False</span>`;
+    const text = document.createElement('div'); text.className='qtext'; text.textContent = item.q;
+    const opts = document.createElement('div'); opts.className='opts';
+
+    item.tf.forEach((opt, k) => {
+      const row = document.createElement('label'); row.className='opt';
+      const cb = document.createElement('input'); cb.type='checkbox'; cb.dataset.group = 'tf'+(j+1);
+      cb.addEventListener('change', ()=> {
+        // mutual exclusion between the two checkboxes
+        document.querySelectorAll(`input[type="checkbox"][data-group="tf${j+1}"]`).forEach(box=>{
+          if (box!==cb) box.checked=false;
+        });
+      });
+      const span = document.createElement('div'); span.textContent = opt;
+      row.appendChild(cb); row.appendChild(span); opts.appendChild(row);
+    });
+
+    const actions = document.createElement('div'); actions.className='actions';
+    const note = document.createElement('div'); note.className='mutual-note'; note.textContent='(Select either True or False.)';
+    const btn = createBtn('Check Answer');
+    const res = document.createElement('div'); res.className='result';
+
+    btn.addEventListener('click', () => {
+      const boxes = [...opts.querySelectorAll('input[type=checkbox]')];
+      const chosen = boxes.findIndex(b=>b.checked);
+      const ok = (chosen === item.correct[0]);
+      const ansText = item.tf[item.correct[0]];
+      setResult(res, ok, null, ansText, item.why);
+      card.style.borderColor = ok ? 'rgba(31,191,117,.6)' : 'rgba(255,93,93,.5)';
+    });
+
+    actions.appendChild(btn);
+    card.appendChild(head); card.appendChild(text); card.appendChild(opts); card.appendChild(note); card.appendChild(actions); card.appendChild(res);
+    quizEl.appendChild(card);
+  });
+}
+
+/* Code Questions */
+function renderCode() {
+  const title = document.createElement('h2'); title.className='section-title'; title.textContent='Section C: R Coding (10 Questions)';
+  quizEl.appendChild(title);
+  code.forEach((item, k) => {
+    const idx = mcq.length + tfs.length + k + 1;
+    const card = createCard();
+    const head = document.createElement('div'); head.className='qhead';
+    head.innerHTML = `<span class="qnum">Q${idx}</span><span class="qtype">R Coding</span><span class="tag">Answer in R</span>`;
+    const text = document.createElement('div'); text.className='qtext'; text.textContent = item.q;
+    const ta = document.createElement('textarea'); ta.className='codebox'; ta.placeholder='Type your R code here...';
+
+    const actions = document.createElement('div'); actions.className='actions';
+    const btn = createBtn('Check Answer');
+    const res = document.createElement('div'); res.className='result';
+
+    btn.addEventListener('click', () => {
+      const user = ta.value.trim();
+      let ok = false;
+      for (const pat of item.patterns) {
+        const re = new RegExp(pat);
+        if (re.test(user)) { ok = true; break; }
+      }
+      const ansText = item.answer.replace(/\n/g,'<br>');
+      setResult(res, ok, null, ansText, item.why);
+      card.style.borderColor = ok ? 'rgba(31,191,117,.6)' : 'rgba(255,93,93,.5)';
+    });
+
+    actions.appendChild(btn);
+    card.appendChild(head); card.appendChild(text); card.appendChild(ta); card.appendChild(actions); card.appendChild(res);
+    quizEl.appendChild(card);
+  });
+}
+
+/* Render all sections */
+renderMCQ();
+const hr1 = document.createElement('div'); hr1.className='hr'; quizEl.appendChild(hr1);
+renderTF();
+const hr2 = document.createElement('div'); hr2.className='hr'; quizEl.appendChild(hr2);
+renderCode();
+</script>
+</body>
+</html>
