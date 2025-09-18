@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Comprehensive Quiz — Frequent Patterns, IF Rules, χ², FOIL, Entropy & Clustering</title>
+<style>
+  :root{
+    --bg:#0c0f14; --panel:#121826; --ink:#e6e6ea; --muted:#aab2c8; --accent:#7aa2ff;
+    --good:#1fbf75; --bad:#ff5d5d; --warn:#e3b341; --border:#233044;
+  }
+  html,body{background:var(--bg); color:var(--ink); margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;}
+  .wrap{max-width:1100px; margin:40px auto; padding:0 16px 80px;}
+  h1{font-size:28px; margin:0 0 6px;}
+  .sub{color:var(--muted); margin:0 0 24px;}
+  .card{
+    background:linear-gradient(180deg,#121826,#0f1522); border:1px solid var(--border);
+    border-radius:16px; padding:18px 20px; margin:14px 0;
+    box-shadow:0 8px 24px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.02);
+  }
+  .qhead{display:flex; gap:10px; align-items:baseline; flex-wrap:wrap}
+  .qnum{font-weight:700; color:#cbd6ff;}
+  .qtype{font-size:12px; color:var(--muted); padding:2px 8px; border:1px solid var(--border); border-radius:999px;}
+  .qtext{margin:10px 0 10px; line-height:1.5}
+  .opts{display:grid; gap:10px; margin:12px 0;}
+  .opt{
+    display:flex; gap:10px; align-items:flex-start; padding:10px 12px; border:1px solid var(--border);
+    border-radius:10px; background:#0d1320; transition:background .2s,border-color .2s;
+  }
+  .opt input[type="checkbox"]{margin-top:3px; width:18px; height:18px; accent-color:var(--accent);}
+  .codebox{width:100%; min-height:90px; padding:10px 12px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+           background:#0a0f1b; color:#e9f1ff; border:1px solid var(--border); border-radius:10px; resize:vertical;}
+  .actions{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:12px;}
+  .btn{
+    border:1px solid #2c3b55; background:#162136; color:#e9f1ff; padding:8px 12px; border-radius:12px; cursor:pointer;
+    transition:transform .04s ease, background .2s;
+  }
+  .btn:hover{background:#1a2946}
+  .btn:active{transform:translateY(1px)}
+  .result{margin-top:10px; font-weight:600}
+  .correct{color:var(--good)}
+  .incorrect{color:var(--bad)}
+  .explain{margin-top:6px; color:#9fc4ff}
+  .mutual-note{font-size:12px; color:var(--muted); margin-top:-4px;}
+  .section-title{margin-top:36px; font-size:22px;}
+  .footer{margin-top:26px; color:var(--muted); font-size:13px;}
+  .hr{height:1px; background:linear-gradient(90deg, transparent, #2a3956, transparent); margin:20px 0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Comprehensive Quiz — Apriori, IF Rules, χ², FOIL, Entropy, FP-Growth & Clustering</h1>
+  <p class="sub">50 questions total. MCQs, True/False, and R/Practical coding. Click <b>Check Answer</b> per question for instant feedback.</p>
+
+  <div id="quiz"></div>
+
+  <div class="footer">
+    Focus areas: Apriori, IF rules & metrics, χ², FOIL, Entropy, Candidate generation/pruning, FP-Growth/FP-tree, Clustering algorithms.
+  </div>
+</div>
+
+<script>
+/* =============================
+   Section A — Multiple Choice (25)
+   ============================= */
+const mcq = [
+  // Apriori / IF rules + metrics (heavy)
+  {q:"Support of itemset X in transaction DB T is:",choices:["P(X|Y)","|{t∈T: X⊆t}| / |T|","|X| / |T|","P(X∪Y)"],correct:[1],why:"Support is the fraction of transactions that contain X."},
+  {q:"Confidence(A→B) equals:",choices:["P(A∩B)","P(B|A)","P(A|B)","P(B)"],correct:[1],why:"Confidence is conditional probability of B given A."},
+  {q:"Lift(A→B) is best interpreted as:",choices:["P(A)/P(B)","P(B)/P(A)","P(B|A)/P(B)","P(A∩B)−P(A)P(B)"],correct:[2],why:"Lift = confidence / support(B); >1 positive association, =1 independence."},
+  {q:"Apriori property (downward closure) implies:",choices:["If X is frequent, all supersets are frequent","If X is frequent, all nonempty subsets are frequent","If X is infrequent, some subsets are infrequent","Support never decreases with superset size"],correct:[1],why:"All nonempty subsets of a frequent itemset must be frequent (anti-monotone)."},
+  {q:"Primary bottleneck of Apriori is:",choices:["Entropy calculation","Candidate generation and multiple DB scans","FP-tree compression","Cosine similarity"],correct:[1],why:"Apriori repeatedly generates candidates and rescans the DB."},
+  {q:"Hash-based pruning in Apriori is used to:",choices:["Reduce confidence","Reduce candidate k-itemsets early","Increase lift","Compute χ²"],correct:[1],why:"Hashing prunes candidate space by hashing k-item subsets from transactions."},
+  {q:"Partitioning strategy in frequent mining enables:",choices:["Zero DB scans","Two DB scans with local→global verification","One pass with exact results","Only top-k mining"],correct:[1],why:"Mine locally per partition, then verify globally with a second pass."},
+  {q:"Sampling in Apriori primarily aims to:",choices:["Compute exact minsup","Reduce runtime via approximate mining","Increase support","Compute entropy"],correct:[1],why:"Sample reduces data size to speed discovery; final verification may be needed."},
+  {q:"Rule interestingness: Lift<1 indicates:",choices:["Positive correlation","Independence","Negative correlation","No effect"],correct:[2],why:"Lift<1 means A and B co-occur less than expected by chance."},
+  {q:"Given: |T|=1000, support(A)=0.2, support(B)=0.25, support(A∪B)=0.15. Confidence(A→B)=?",choices:["0.75","0.6","0.15","0.2"],correct:[1],why:"conf = supp(A∪B)/supp(A) = 0.15/0.2 = 0.75. (Answer 0.75)"},
+  // χ² (k-square), FOIL, Entropy (heavy)
+  {q:"The χ² test in association/rule evaluation is used to:",choices:["Test independence vs. dependence","Estimate support","Compute lift","Normalize confidence"],correct:[0],why:"χ² compares observed vs expected counts to test independence."},
+  {q:"If χ² statistic is very large (p≪0.05), we conclude:",choices:["Likely dependence between variables","Likely independence","Data missingness","Model overfitting"],correct:[0],why:"Large χ² relative to df suggests association is unlikely by chance."},
+  {q:"Entropy H(D) is:",choices:["Σ p_i log p_i","−Σ p_i log₂ p_i","Σ p_i^2","1−Gini"],correct:[1],why:"Shannon entropy uses base-2 logarithm in bits."},
+  {q:"Entropy is lowest when:",choices:["Classes are uniform/mixed evenly","Classes are pure (one class dominates)","Support is 0","Lift is 1"],correct:[1],why:"Pure nodes (one class) have H≈0; mixed nodes have high entropy."},
+  {q:"FOIL selects literals by maximizing:",choices:["Decrease in support","Gini impurity","FOIL-Gain (accuracy×coverage trade-off)","Lift"],correct:[2],why:"FOIL-Gain balances accuracy and the number of positives covered."},
+  {q:"Rule coverage vs accuracy: coverage is:",choices:["% of covered tuples that are correct","% of dataset covered by the rule","1−entropy","χ²/df"],correct:[1],why:"Coverage = fraction of all tuples that satisfy antecedent; accuracy = among covered, how many correct."},
+  {q:"Default rule in a decision list fires when:",choices:["Multiple rules tie","No rule covers the tuple","Entropy=0","Confidence=1"],correct:[1],why:"Default applies when no other rule is satisfied."},
+  {q:"Size ordering conflict resolution prefers:",choices:["Shortest antecedent","Largest antecedent (most specific)","Random pick","Highest support only"],correct:[1],why:"Pick the rule with the 'toughest' conditions (most tests)."},
+  // FP-Growth / FP-tree (heavy)
+  {q:"FP-Growth differs from Apriori because it:",choices:["Uses candidate generation","Avoids candidate generation via FP-tree","Needs more DB scans","Only mines 1-itemsets"],correct:[1],why:"It compresses DB to FP-tree and mines via conditional pattern bases."},
+  {q:"A key step in building an FP-tree is to:",choices:["Sort items by transaction order","Sort items by global descending frequency","Randomize items","Sort by confidence"],correct:[1],why:"Sorting by global frequency yields compact trees."},
+  {q:"Conditional pattern base for item i is:",choices:["All transactions containing i","Prefix paths leading to i with counts","Only item i","A set of rules about i"],correct:[1],why:"CPB collects prefix paths ending at i to mine conditional FP-tree."},
+  // Clustering (solid emphasis)
+  {q:"K-means objective minimizes:",choices:["Sum of absolute deviations","Sum of squared distances to centroids (SSE)","Entropy","Lift"],correct:[1],why:"K-means minimizes within-cluster SSE."},
+  {q:"Single linkage hierarchical clustering uses:",choices:["Max pairwise distance","Average pairwise distance","Min pairwise distance","Centroid distance"],correct:[2],why:"Single linkage = nearest neighbor distance."},
+  {q:"‘City-block’ distance is:",choices:["Euclidean","Mahalanobis","Manhattan (L1)","Cosine"],correct:[2],why:"City-block is Manhattan (L1) distance."},
+  {q:"Cluster centroid in k-means is:",choices:["Coordinate-wise mean of assigned points","Coordinate-wise median","Random point","Mode"],correct:[0],why:"Centroid = mean vector of the cluster."}
+];
+
+/* =============================
+   Section B — True / False (15)
+   ============================= */
+const tfs = [
+  {q:"Apriori relies on the downward-closure property to prune candidates.",correct:[0],tf:["True","False"],why:"All nonempty subsets of a frequent itemset must be frequent."},
+  {q:"Lift=1 implies independence between antecedent and consequent.",correct:[0],tf:["True","False"],why:"Lift=1 → no association beyond chance."},
+  {q:"A very small p-value in χ² suggests the variables are independent.",correct:[1],tf:["True","False"],why:"Small p suggests dependence (reject independence)."},
+  {q:"Entropy increases as class distribution becomes more mixed.",correct:[0],tf:["True","False"],why:"Pure → low entropy; mixed → high entropy."},
+  {q:"FOIL tends to prefer literals that increase the number of covered positives while maintaining accuracy.",correct:[0],tf:["True","False"],why:"FOIL-Gain balances accuracy and coverage."},
+  {q:"In rule mining, confidence(A→B) can be high even when A and B are independent if B is common.",correct:[0],tf:["True","False"],why:"High support(B) can inflate confidence; lift fixes this."},
+  {q:"FP-Growth performs explicit candidate k-itemset generation each iteration.",correct:[1],tf:["True","False"],why:"It avoids candidate generation using FP-tree."},
+  {q:"Partition-based frequent itemset mining typically uses two DB scans.",correct:[0],tf:["True","False"],why:"Local mining then global verification."},
+  {q:"Coverage alone is sufficient to evaluate a rule’s quality.",correct:[1],tf:["True","False"],why:"Need accuracy/χ²/lift etc., not only coverage."},
+  {q:"In size ordering, the most specific (longest antecedent) triggered rule fires.",correct:[0],tf:["True","False"],why:"Yes — 'toughest' rule is preferred."},
+  {q:"K-means clustering is an overlapping (fuzzy) clustering method.",correct:[1],tf:["True","False"],why:"K-means is exclusive; fuzzy c-means is overlapping."},
+  {q:"Single linkage is prone to 'chaining' effects.",correct:[0],tf:["True","False"],why:"Can link clusters via a series of near neighbors."},
+  {q:"Manhattan distance equals the sum of absolute coordinate differences.",correct:[0],tf:["True","False"],why:"L1 norm = Σ |x_i−y_i|."},
+  {q:"A default rule is used when multiple rules fire.",correct:[1],tf:["True","False"],why:"Default is used when no rule covers the tuple."},
+  {q:"Entropy is measured in bits when using log base 2.",correct:[0],tf:["True","False"],why:"log₂ yields units of bits."}
+];
+
+/* =============================
+   Section C — R Coding / Practical (10)
+   ============================= */
+const code = [
+  // Apriori setup
+  {q:"Read raw transaction lines from 'Transactionlist2.csv' (header present). Drop header line.",patterns:[/readLines\s*\(\s*["']Transactionlist2\.csv["']\s*\)/is,/lines\s*<-\s*lines\[\s*-\s*1\s*\]/is],answer:`lines <- readLines("Transactionlist2.csv")\nlines <- lines[-1]`,why:"Use readLines then remove header row."},
+  {q:"From lines formatted as 'TID,item1,item2,...', remove the TID prefix leaving only items.",patterns:[/sub\s*\(\s*["']\^\[0-9\]\+\,[\"']\s*,\s*["']["']\s*,\s*lines\s*\)/is],answer:`items <- sub("^[0-9]+,", "", lines)`,why:"Regex strips leading digits and comma."},
+  {q:"Split each line by comma and trim whitespace, then coerce to transactions.",patterns:[/strsplit\s*\(.*,\s*["'],["']\s*\)/is,/as\s*\(\s*.*,\s*["']transactions["']\s*\)/is],answer:`lst <- strsplit(items, ",")\nlst <- lapply(lst, trimws)\ntrx <- as(lst, "transactions")`,why:"Create list-of-items and coerce to 'transactions'."},
+  {q:"Mine rules with minimum support 0.2 and confidence 0.6, then show top 5 by lift.",patterns:[/apriori.*supp.*0\.2.*conf.*0\.6/is,/sort\s*\(.*by\s*=\s*["']lift["']\s*,\s*decreasing\s*=\s*TRUE\s*\)/is],answer:`rules <- apriori(trx, parameter=list(supp=0.2, conf=0.6))\nrules_lift <- sort(rules, by="lift", decreasing=TRUE)\ninspect(rules_lift[1:5])`,why:"Standard mining and ranking workflow."},
+  // IF rules calculations
+  {q:"Given |T|=1000, supp(A)=0.2, supp(B)=0.25, supp(A∪B)=0.15 — compute confidence(A→B) and lift(A→B) in R.",patterns:[/0\.15\/0\.2/is,/\/0\.25/is],answer:`conf <- 0.15/0.2\nlift <- conf/0.25\nc(conf=conf, lift=lift)`,why:"conf=0.75; lift=0.75/0.25=3."},
+  // χ² test
+  {q:"Perform χ² test on a 2×2 contingency table for A vs B given matrix m (observed counts).",patterns:[/chisq\.test\s*\(\s*m\s*\)/is],answer:`# m <- matrix(c(a11,a12,a21,a22), nrow=2, byrow=TRUE)\nchisq.test(m, correct=FALSE)`,why:"Use chisq.test on observed frequency matrix."},
+  // Entropy
+  {q:"Write a small function H(p) that returns Shannon entropy in bits for class probabilities vector p.",patterns:[/log2\s*\(/is,/sum\s*\(/is],answer:`H <- function(p){p <- p[p>0]; -sum(p*log2(p))}`,why:"Ignore zeros; compute −Σ p log₂ p."},
+  // FOIL (conceptual coding check)
+  {q:"Given pos and neg are the counts of positive/negative tuples covered before adding a literal, and pos2/neg2 after adding it; compute a simple FOIL-gain proxy.",patterns:[/log2\s*\(/is,/pos2.*\/.*\(pos2\+neg2\)/is],answer:`foil_gain <- pos2 * (log2((pos2/(pos2+neg2)) / (pos/(pos+neg))))`,why:"FOIL-Gain favors literals that increase positive precision over the prior."},
+  // FP-Growth/FP-tree usage
+  {q:"Using arules, plot a support vs lift scatter of mined rules shaded by confidence.",patterns:[/plot\s*\(\s*rules.*method\s*=\s*["']scatterplot["']/is],answer:`plot(rules, method="scatterplot", measure=c("support","lift"), shading="confidence")`,why:"Common visualization for rule quality."},
+  // Clustering
+  {q:"Compute Euclidean distance on data frame df, run hierarchical clustering (complete linkage), and plot the dendrogram.",patterns:[/dist\s*\(\s*df.*euclidean/is,/hclust\s*\(/is,/plot\s*\(/is],answer:`d <- dist(df, method="euclidean")\nhc <- hclust(d, method="complete")\nplot(hc)`,why:"Standard hierarchical clustering pipeline."}
+];
+
+/* =============================
+   Renderer
+   ============================= */
+const quizEl = document.getElementById('quiz');
+
+function createCard(){const c=document.createElement('div');c.className='card';return c;}
+function createBtn(l){const b=document.createElement('button');b.className='btn';b.textContent=l;return b;}
+function sanitize(s){return (s||'').toString().replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function setResult(el,ok,_,ans,why){
+  el.innerHTML='';
+  const r=document.createElement('div');r.className='result '+(ok?'correct':'incorrect');r.textContent=ok?'Correct!':'Incorrect.';el.appendChild(r);
+  const e=document.createElement('div');e.className='explain';e.innerHTML=(ok?'':`<b>Answer:</b> ${sanitize(ans)}<br/>`)+sanitize(why);el.appendChild(e);
+}
+
+/* MCQ */
+function renderMCQ(){
+  const title=document.createElement('h2');title.className='section-title';title.textContent='Section A: Multiple Choice (25)';
+  quizEl.appendChild(title);
+  mcq.forEach((item,i)=>{
+    const card=createCard();
+    const head=document.createElement('div');head.className='qhead';head.innerHTML=`<span class="qnum">Q${i+1}</span><span class="qtype">MCQ</span>`;
+    const text=document.createElement('div');text.className='qtext';text.textContent=item.q;
+    const opts=document.createElement('div');opts.className='opts';
+    item.choices.forEach((opt,idx)=>{
+      const row=document.createElement('label');row.className='opt';
+      const cb=document.createElement('input');cb.type='checkbox';cb.dataset.group='mcq'+(i+1);
+      cb.addEventListener('change',()=>{document.querySelectorAll(`input[data-group="mcq${i+1}"]`).forEach(b=>{if(b!==cb)b.checked=false;});});
+      const span=document.createElement('div');span.innerHTML=sanitize(opt);
+      row.appendChild(cb);row.appendChild(span);opts.appendChild(row);
+    });
+    const actions=document.createElement('div');actions.className='actions';
+    const note=document.createElement('div');note.className='mutual-note';note.textContent='(Select exactly one option.)';
+    const btn=createBtn('Check Answer');const res=document.createElement('div');res.className='result';
+    btn.addEventListener('click',()=>{
+      const boxes=[...opts.querySelectorAll('input[type=checkbox]')];
+      const chosen=boxes.findIndex(b=>b.checked);
+      const ok=(chosen===item.correct[0]);
+      const letters=['A','B','C','D'];
+      const ansText=letters[item.correct[0]]+'. '+item.choices[item.correct[0]];
+      setResult(res,ok,null,ansText,item.why);
+      card.style.borderColor=ok?'rgba(31,191,117,.6)':'rgba(255,93,93,.5)';
+    });
+    actions.appendChild(btn);
+    card.appendChild(head);card.appendChild(text);card.appendChild(opts);card.appendChild(note);card.appendChild(actions);card.appendChild(res);
+    quizEl.appendChild(card);
+  });
+}
+
+/* True/False */
+function renderTF(){
+  const title=document.createElement('h2');title.className='section-title';title.textContent='Section B: True / False (15)';
+  quizEl.appendChild(title);
+  tfs.forEach((item,j)=>{
+    const idx=j+mcq.length+1;
+    const card=createCard();
+    const head=document.createElement('div');head.className='qhead';head.innerHTML=`<span class="qnum">Q${idx}</span><span class="qtype">True / False</span>`;
+    const text=document.createElement('div');text.className='qtext';text.textContent=item.q;
+    const opts=document.createElement('div');opts.className='opts';
+    item.tf.forEach((opt,k)=>{
+      const row=document.createElement('label');row.className='opt';
+      const cb=document.createElement('input');cb.type='checkbox';cb.dataset.group='tf'+(j+1);
+      cb.addEventListener('change',()=>{document.querySelectorAll(`input[data-group="tf${j+1}"]`).forEach(b=>{if(b!==cb)b.checked=false;});});
+      const span=document.createElement('div');span.textContent=opt;
+      row.appendChild(cb);row.appendChild(span);opts.appendChild(row);
+    });
+    const actions=document.createElement('div');actions.className='actions';
+    const note=document.createElement('div');note.className='mutual-note';note.textContent='(Select either True or False.)';
+    const btn=createBtn('Check Answer');const res=document.createElement('div');res.className='result';
+    btn.addEventListener('click',()=>{
+      const boxes=[...opts.querySelectorAll('input[type=checkbox]')];
+      const chosen=boxes.findIndex(b=>b.checked);
+      const ok=(chosen===item.correct[0]);
+      const ansText=item.tf[item.correct[0]];
+      setResult(res,ok,null,ansText,item.why);
+      card.style.borderColor=ok?'rgba(31,191,117,.6)':'rgba(255,93,93,.5)';
+    });
+    actions.appendChild(btn);
+    card.appendChild(head);card.appendChild(text);card.appendChild(opts);card.appendChild(note);card.appendChild(actions);card.appendChild(res);
+    quizEl.appendChild(card);
+  });
+}
+
+/* Coding / Practical */
+function renderCode(){
+  const title=document.createElement('h2');title.className='section-title';title.textContent='Section C: R Coding / Practical (10)';
+  quizEl.appendChild(title);
+  code.forEach((item,k)=>{
+    const idx=mcq.length+tfs.length+k+1;
+    const card=createCard();
+    const head=document.createElement('div');head.className='qhead';head.innerHTML=`<span class="qnum">Q${idx}</span><span class="qtype">R / Practical</span>`;
+    const text=document.createElement('div');text.className='qtext';text.textContent=item.q;
+    const ta=document.createElement('textarea');ta.className='codebox';ta.placeholder='Type your R code here...';
+    const actions=document.createElement('div');actions.className='actions';
+    const btn=createBtn('Check Answer');const res=document.createElement('div');res.className='result';
+    btn.addEventListener('click',()=>{
+      const user=ta.value.trim();
+      let ok=false;
+      for(const pat of item.patterns){const re=new RegExp(pat);if(re.test(user)){ok=true;break;}}
+      const ansText=item.answer.replace(/\n/g,'<br>');
+      setResult(res,ok,null,ansText,item.why);
+      card.style.borderColor=ok?'rgba(31,191,117,.6)':'rgba(255,93,93,.5)';
+    });
+    actions.appendChild(btn);
+    card.appendChild(head);card.appendChild(text);card.appendChild(ta);card.appendChild(actions);card.appendChild(res);
+    quizEl.appendChild(card);
+  });
+}
+
+/* Render all */
+renderMCQ();
+const hr1=document.createElement('div');hr1.className='hr';quizEl.appendChild(hr1);
+renderTF();
+const hr2=document.createElement('div');hr2.className='hr';quizEl.appendChild(hr2);
+renderCode();
+</script>
+</body>
+</html>
