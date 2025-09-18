@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(where jupyter)"
+      "Bash(where jupyter)",
+      "Bash(mv:*)"
     ],
     "deny": [],
     "ask": []
