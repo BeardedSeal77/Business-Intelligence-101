@@ -688,3 +688,38 @@ where **pos** and **neg** are the number of positive and negative tuples covered
 **This value will increase with the accuracy of R on a pruning set**.
 **if the FOIL Prune value is higher for the pruned version of R, then we prune R**.
 **Conjuncts are pruned one at a time as long as this results in an improvement**.
+
+---
+
+## Rule Pruning Example
+
+**Original Rule:** `IF Age=Senior AND Student=No AND Credit_Rating=Fair THEN Buys_Computer=Yes`
+
+**Step 1: Evaluate Original Rule on Validation Set**
+- Covers 8 positive examples, 1 negative example
+- FOIL_Prune = (8-1)/(8+1) = 7/9 = 0.78
+
+**Step 2: Test Pruning Option 1 (Remove Credit_Rating=Fair)**
+**Pruned Rule:** `IF Age=Senior AND Student=No THEN Buys_Computer=Yes`
+- Covers 10 positive examples, 3 negative examples
+- FOIL_Prune = (10-3)/(10+3) = 7/13 = 0.54
+- **Decision:** Keep original rule (0.78 > 0.54) - pruning made it worse
+
+**Step 3: Test Pruning Option 2 (Remove Student=No)**
+**Pruned Rule:** `IF Age=Senior AND Credit_Rating=Fair THEN Buys_Computer=Yes`
+- Covers 9 positive examples, 0 negative examples
+- FOIL_Prune = (9-0)/(9+0) = 9/9 = 1.0
+- **Decision:** Use this pruned version (1.0 > 0.78) - improvement!
+
+**Step 4: Test Further Pruning (Remove Age=Senior)**
+**Pruned Rule:** `IF Credit_Rating=Fair THEN Buys_Computer=Yes`
+- Covers 12 positive examples, 4 negative examples
+- FOIL_Prune = (12-4)/(12+4) = 8/16 = 0.5
+- **Decision:** Keep previous version (1.0 > 0.5) - stop pruning
+
+**Final Result:** `IF Age=Senior AND Credit_Rating=Fair THEN Buys_Computer=Yes`
+
+**Key Insights:**
+- **Removing Student=No improved the rule** - it was unnecessary noise
+- **Removing Credit_Rating=Fair or Age=Senior made it worse** - these are important conditions
+- **The pruned rule is simpler, more accurate, and covers more positive examples**
