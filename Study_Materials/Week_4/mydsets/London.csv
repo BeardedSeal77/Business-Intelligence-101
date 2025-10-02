@@ -1,0 +1,959 @@
+Name,Branch,Date Claimed,Amount,Category
+Harrison Hart,London,08/06/2014,15.68,Stationery
+Noah Johnson,London,01/11/2015,82.77,Research
+Ethan Wells,London,14/05/2012,134.74,Meals
+Callum Knight,London,26/06/2012,28.71,Online expenses
+Noah Johnson,London,24/05/2016,50.35,Vehicle fuel
+Alfie Saunders,London,05/08/2015,50.32,Public transport
+Callum Knight,London,15/11/2015,67.92,Research
+Harrison Hart,London,23/10/2016,7.53,Miscellaneous
+Callum Knight,London,22/05/2013,66.20,Office equipment
+Ethan Wells,London,24/10/2015,28.56,Miscellaneous
+Ethan Wells,London,25/11/2015,132.35,Office equipment
+Alfie Saunders,London,17/10/2013,261.67,Entertaining
+Demi Taylor,London,26/12/2016,62.04,Computer equipment
+Ethan Wells,London,24/12/2014,39.51,Miscellaneous
+Callum Knight,London,30/09/2012,30.57,Research
+Alfie Saunders,London,03/12/2014,388.13,Computer equipment
+Alfie Saunders,London,07/10/2013,61.92,Office equipment
+Harrison Hart,London,27/12/2016,192.83,Travel
+Alfie Saunders,London,20/07/2012,535.05,Public transport
+Demi Taylor,London,04/01/2012,70.06,Stationery
+Reuben Scott,London,02/03/2012,298.64,Travel
+Tyler Pearson,London,01/01/2012,46.09,Entertaining
+Callum Knight,London,27/09/2015,291.09,Miscellaneous
+Demi Taylor,London,12/05/2013,454.90,Travel
+Reuben Scott,London,16/05/2012,233.78,Miscellaneous
+Ethan Wells,London,15/01/2012,132.84,Accommodation
+Demi Taylor,London,22/06/2013,491.81,Accommodation
+Noah Johnson,London,26/05/2015,167.82,Miscellaneous
+Ethan Wells,London,10/05/2013,386.40,Vehicle fuel
+Demi Taylor,London,04/03/2015,141.87,Accommodation
+Tyler Pearson,London,12/09/2015,68.84,Vehicle mileage
+Tyler Pearson,London,01/12/2015,293.15,Entertaining
+Callum Knight,London,01/10/2014,501.98,Travel
+Harrison Hart,London,12/03/2013,506.70,Entertaining
+Tyler Pearson,London,01/04/2015,80.34,Research
+Callum Knight,London,05/06/2013,53.29,Postage
+Demi Taylor,London,03/11/2015,28.01,Research
+Reuben Scott,London,04/11/2016,371.04,Miscellaneous
+Ethan Wells,London,05/01/2014,235.13,Accommodation
+Tyler Pearson,London,10/10/2016,205.74,Miscellaneous
+Alfie Saunders,London,24/04/2016,150.76,Meals
+Reuben Scott,London,27/04/2015,21.58,Bank charges
+Noah Johnson,London,07/04/2016,71.21,Phone
+Harrison Hart,London,03/07/2012,252.29,Travel
+Harrison Hart,London,17/12/2016,387.64,Public transport
+Noah Johnson,London,06/11/2015,256.70,Vehicle fuel
+Harrison Hart,London,17/07/2012,154.04,Entertaining
+Harrison Hart,London,09/12/2016,526.99,Computer equipment
+Noah Johnson,London,29/07/2015,50.40,Office equipment
+Ethan Wells,London,26/12/2013,27.64,Vehicle mileage
+Noah Johnson,London,27/03/2016,88.88,Research
+Harrison Hart,London,26/02/2012,492.60,Computer equipment
+Callum Knight,London,25/03/2014,130.66,Vehicle maintenance
+Harrison Hart,London,05/10/2012,373.30,Entertaining
+Ethan Wells,London,21/05/2013,454.11,Public transport
+Demi Taylor,London,20/05/2014,19.61,Miscellaneous
+Callum Knight,London,16/02/2015,74.69,Stationery
+Noah Johnson,London,08/02/2016,68.85,Vehicle fuel
+Alfie Saunders,London,02/07/2013,67.46,Vehicle fuel
+Noah Johnson,London,23/06/2014,45.12,Vehicle mileage
+Noah Johnson,London,10/04/2015,50.89,Phone
+Demi Taylor,London,27/03/2013,318.47,Miscellaneous
+Ethan Wells,London,29/08/2013,182.97,Miscellaneous
+Alfie Saunders,London,04/09/2013,140.37,Vehicle mileage
+Callum Knight,London,18/03/2013,64.70,Phone
+Alfie Saunders,London,18/08/2014,76.26,Research
+Tyler Pearson,London,10/04/2012,78.42,Vehicle mileage
+Callum Knight,London,25/11/2015,154.56,Bank charges
+Harrison Hart,London,12/08/2016,63.94,Stationery
+Tyler Pearson,London,12/07/2014,170.98,Miscellaneous
+Tyler Pearson,London,08/09/2016,254.31,Travel
+Tyler Pearson,London,04/11/2015,106.09,Bank charges
+Reuben Scott,London,13/09/2012,28.51,Miscellaneous
+Alfie Saunders,London,12/09/2015,16.15,Travel
+Alfie Saunders,London,03/08/2012,17.68,Accommodation
+Ethan Wells,London,29/08/2013,2.28,Vehicle fuel
+Noah Johnson,London,24/10/2015,53.39,Stationery
+Callum Knight,London,08/11/2014,241.79,Public transport
+Callum Knight,London,31/05/2015,35.09,Stationery
+Alfie Saunders,London,29/05/2016,353.13,Travel
+Noah Johnson,London,15/04/2015,128.65,Meals
+Reuben Scott,London,14/12/2013,271.67,Accommodation
+Harrison Hart,London,15/01/2014,89.65,Bank charges
+Demi Taylor,London,24/04/2014,119.70,Meals
+Noah Johnson,London,15/05/2015,239.66,Accommodation
+Reuben Scott,London,16/06/2014,123.13,Postage
+Callum Knight,London,14/05/2012,144.90,Phone
+Ethan Wells,London,05/08/2013,114.16,Research
+Demi Taylor,London,24/02/2014,479.03,Entertaining
+Tyler Pearson,London,06/06/2015,117.59,Online expenses
+Alfie Saunders,London,05/01/2015,394.90,Entertaining
+Alfie Saunders,London,10/03/2014,72.78,Bank charges
+Reuben Scott,London,28/03/2015,16.97,Online expenses
+Noah Johnson,London,19/02/2012,55.17,Research
+Demi Taylor,London,06/02/2015,100.45,Stationery
+Tyler Pearson,London,18/02/2013,333.74,Travel
+Demi Taylor,London,12/01/2012,178.37,Vehicle fuel
+Ethan Wells,London,18/07/2016,74.97,Vehicle mileage
+Alfie Saunders,London,15/04/2012,549.57,Travel
+Reuben Scott,London,08/12/2015,228.89,Accommodation
+Reuben Scott,London,29/11/2012,329.05,Vehicle fuel
+Noah Johnson,London,24/10/2012,55.65,Phone
+Ethan Wells,London,09/11/2015,48.21,Meals
+Noah Johnson,London,14/12/2013,50.82,Research
+Reuben Scott,London,24/03/2016,136.86,Office equipment
+Tyler Pearson,London,26/10/2013,27.44,Office equipment
+Harrison Hart,London,23/07/2015,406.42,Computer equipment
+Tyler Pearson,London,18/07/2014,270.28,Miscellaneous
+Alfie Saunders,London,14/09/2016,15.06,Stationery
+Demi Taylor,London,02/04/2015,257.03,Accommodation
+Callum Knight,London,01/10/2013,83.84,Vehicle maintenance
+Harrison Hart,London,30/09/2015,248.66,Computer equipment
+Callum Knight,London,19/06/2013,40.63,Stationery
+Noah Johnson,London,15/04/2014,550.47,Travel
+Harrison Hart,London,10/08/2012,62.17,Phone
+Alfie Saunders,London,19/11/2013,97.54,Research
+Ethan Wells,London,12/04/2015,143.44,Meals
+Harrison Hart,London,20/04/2016,25.09,Vehicle mileage
+Alfie Saunders,London,30/01/2014,11.33,Research
+Reuben Scott,London,15/12/2014,437.11,Accommodation
+Demi Taylor,London,05/04/2016,399.08,Public transport
+Alfie Saunders,London,24/07/2014,121.79,Meals
+Noah Johnson,London,02/12/2014,409.39,Public transport
+Alfie Saunders,London,11/11/2016,366.45,Computer equipment
+Ethan Wells,London,11/01/2012,177.00,Travel
+Alfie Saunders,London,05/12/2016,44.59,Research
+Callum Knight,London,22/09/2012,12.82,Vehicle maintenance
+Demi Taylor,London,06/01/2014,265.52,Computer equipment
+Harrison Hart,London,03/02/2014,94.78,Bank charges
+Callum Knight,London,30/07/2015,226.01,Miscellaneous
+Alfie Saunders,London,07/07/2014,117.35,Office equipment
+Ethan Wells,London,05/03/2016,243.07,Miscellaneous
+Alfie Saunders,London,08/08/2012,6.38,Office equipment
+Callum Knight,London,12/08/2012,238.49,Entertaining
+Alfie Saunders,London,04/04/2013,106.19,Online expenses
+Callum Knight,London,13/09/2016,147.90,Office equipment
+Callum Knight,London,30/01/2015,206.12,Travel
+Ethan Wells,London,05/02/2014,206.89,Public transport
+Tyler Pearson,London,24/12/2016,152.49,Meals
+Callum Knight,London,09/09/2015,202.88,Travel
+Reuben Scott,London,16/05/2013,12.54,Meals
+Tyler Pearson,London,19/04/2015,116.71,Meals
+Reuben Scott,London,25/04/2013,133.94,Bank charges
+Alfie Saunders,London,25/07/2013,31.55,Postage
+Reuben Scott,London,06/09/2014,394.49,Accommodation
+Demi Taylor,London,16/01/2013,30.69,Research
+Demi Taylor,London,04/11/2013,462.16,Entertaining
+Callum Knight,London,03/08/2015,17.90,Office equipment
+Harrison Hart,London,10/04/2013,501.81,Entertaining
+Noah Johnson,London,11/06/2014,539.50,Travel
+Tyler Pearson,London,01/09/2016,37.00,Bank charges
+Ethan Wells,London,06/07/2013,99.43,Postage
+Reuben Scott,London,12/07/2016,555.44,Travel
+Reuben Scott,London,18/09/2012,6.15,Entertaining
+Callum Knight,London,01/07/2013,429.61,Computer equipment
+Noah Johnson,London,20/04/2013,58.66,Vehicle mileage
+Harrison Hart,London,10/02/2016,85.65,Vehicle mileage
+Alfie Saunders,London,03/12/2013,480.67,Computer equipment
+Callum Knight,London,18/06/2014,109.78,Phone
+Callum Knight,London,16/08/2015,74.96,Public transport
+Tyler Pearson,London,05/05/2013,301.71,Vehicle fuel
+Demi Taylor,London,24/05/2015,75.97,Vehicle mileage
+Tyler Pearson,London,28/02/2014,33.29,Travel
+Reuben Scott,London,25/12/2014,2.37,Vehicle maintenance
+Alfie Saunders,London,19/02/2015,192.81,Miscellaneous
+Demi Taylor,London,18/10/2015,237.07,Accommodation
+Noah Johnson,London,02/01/2016,29.37,Vehicle maintenance
+Noah Johnson,London,04/08/2016,424.27,Public transport
+Tyler Pearson,London,12/04/2016,247.20,Accommodation
+Alfie Saunders,London,13/08/2013,112.98,Bank charges
+Noah Johnson,London,25/02/2014,446.09,Accommodation
+Noah Johnson,London,22/07/2013,130.47,Meals
+Harrison Hart,London,14/10/2016,157.27,Vehicle fuel
+Harrison Hart,London,24/01/2015,300.01,Accommodation
+Noah Johnson,London,02/01/2013,88.36,Miscellaneous
+Demi Taylor,London,08/09/2015,199.00,Accommodation
+Reuben Scott,London,06/03/2013,51.97,Vehicle mileage
+Tyler Pearson,London,24/10/2015,93.81,Vehicle mileage
+Ethan Wells,London,07/04/2013,28.67,Accommodation
+Tyler Pearson,London,27/09/2014,173.04,Computer equipment
+Noah Johnson,London,14/09/2014,86.90,Research
+Alfie Saunders,London,26/04/2012,444.57,Miscellaneous
+Harrison Hart,London,19/10/2012,18.33,Vehicle maintenance
+Alfie Saunders,London,13/02/2013,27.30,Phone
+Alfie Saunders,London,28/10/2016,27.09,Meals
+Harrison Hart,London,11/03/2016,461.91,Computer equipment
+Ethan Wells,London,25/02/2013,29.56,Vehicle maintenance
+Tyler Pearson,London,30/08/2014,25.75,Vehicle maintenance
+Demi Taylor,London,20/10/2014,361.14,Accommodation
+Alfie Saunders,London,30/06/2012,151.14,Online expenses
+Noah Johnson,London,29/05/2014,304.15,Travel
+Callum Knight,London,11/07/2015,21.61,Public transport
+Callum Knight,London,01/08/2015,28.86,Bank charges
+Tyler Pearson,London,08/10/2013,193.65,Travel
+Callum Knight,London,20/12/2016,363.57,Computer equipment
+Harrison Hart,London,07/02/2014,137.35,Vehicle mileage
+Demi Taylor,London,09/01/2016,10.78,Bank charges
+Demi Taylor,London,25/02/2015,160.71,Computer equipment
+Demi Taylor,London,27/01/2015,446.12,Vehicle fuel
+Ethan Wells,London,23/07/2015,272.56,Accommodation
+Noah Johnson,London,08/06/2013,111.55,Meals
+Alfie Saunders,London,23/10/2012,28.51,Vehicle maintenance
+Harrison Hart,London,13/07/2015,145.66,Postage
+Harrison Hart,London,03/11/2015,136.38,Stationery
+Tyler Pearson,London,16/11/2014,98.28,Stationery
+Callum Knight,London,23/08/2014,56.74,Meals
+Ethan Wells,London,23/05/2013,323.80,Travel
+Noah Johnson,London,22/09/2015,412.72,Entertaining
+Noah Johnson,London,03/06/2012,456.57,Travel
+Tyler Pearson,London,28/06/2013,449.97,Public transport
+Tyler Pearson,London,15/09/2012,67.26,Vehicle mileage
+Harrison Hart,London,07/08/2014,221.81,Miscellaneous
+Noah Johnson,London,12/08/2013,108.07,Postage
+Noah Johnson,London,10/07/2015,45.23,Research
+Demi Taylor,London,14/01/2016,67.41,Computer equipment
+Demi Taylor,London,05/06/2016,121.31,Vehicle mileage
+Ethan Wells,London,31/01/2012,132.31,Bank charges
+Tyler Pearson,London,18/07/2013,168.47,Vehicle fuel
+Tyler Pearson,London,17/08/2012,311.78,Vehicle fuel
+Demi Taylor,London,04/06/2016,6.27,Online expenses
+Harrison Hart,London,01/02/2013,297.44,Entertaining
+Demi Taylor,London,15/11/2016,148.85,Miscellaneous
+Alfie Saunders,London,13/05/2013,119.81,Entertaining
+Noah Johnson,London,11/04/2015,127.38,Vehicle maintenance
+Demi Taylor,London,27/02/2013,469.15,Travel
+Tyler Pearson,London,01/07/2015,239.95,Miscellaneous
+Demi Taylor,London,05/04/2014,10.21,Office equipment
+Ethan Wells,London,11/02/2015,263.09,Computer equipment
+Demi Taylor,London,03/03/2016,101.84,Postage
+Demi Taylor,London,19/01/2016,124.39,Postage
+Demi Taylor,London,12/04/2013,23.68,Vehicle maintenance
+Harrison Hart,London,14/06/2014,6.01,Vehicle maintenance
+Demi Taylor,London,10/10/2012,112.24,Phone
+Callum Knight,London,01/05/2013,120.99,Online expenses
+Alfie Saunders,London,15/09/2012,22.42,Online expenses
+Ethan Wells,London,02/09/2014,209.98,Computer equipment
+Reuben Scott,London,18/10/2016,154.82,Postage
+Reuben Scott,London,20/07/2016,1.67,Stationery
+Callum Knight,London,28/10/2013,133.59,Postage
+Demi Taylor,London,30/03/2016,487.89,Public transport
+Callum Knight,London,13/05/2015,11.78,Office equipment
+Callum Knight,London,30/01/2015,49.72,Stationery
+Ethan Wells,London,23/12/2015,555.38,Public transport
+Tyler Pearson,London,15/10/2013,1.15,Online expenses
+Reuben Scott,London,14/08/2013,40.85,Meals
+Noah Johnson,London,20/09/2014,82.69,Meals
+Ethan Wells,London,17/05/2014,393.53,Computer equipment
+Harrison Hart,London,05/03/2012,77.57,Meals
+Demi Taylor,London,25/10/2012,158.44,Entertaining
+Reuben Scott,London,03/06/2013,128.72,Office equipment
+Reuben Scott,London,08/03/2016,269.31,Computer equipment
+Alfie Saunders,London,30/04/2014,42.30,Stationery
+Alfie Saunders,London,07/08/2012,156.58,Public transport
+Alfie Saunders,London,06/01/2013,58.90,Public transport
+Ethan Wells,London,10/03/2012,108.51,Stationery
+Noah Johnson,London,07/08/2014,72.84,Bank charges
+Tyler Pearson,London,16/02/2012,368.99,Computer equipment
+Harrison Hart,London,25/12/2016,548.07,Public transport
+Callum Knight,London,27/05/2013,40.93,Vehicle mileage
+Harrison Hart,London,17/10/2015,141.17,Office equipment
+Alfie Saunders,London,08/01/2015,86.12,Bank charges
+Callum Knight,London,30/04/2016,82.51,Phone
+Alfie Saunders,London,07/05/2014,182.56,Travel
+Ethan Wells,London,02/03/2014,198.51,Travel
+Harrison Hart,London,28/06/2015,523.70,Travel
+Reuben Scott,London,01/01/2014,49.08,Office equipment
+Noah Johnson,London,01/07/2012,257.98,Miscellaneous
+Reuben Scott,London,25/04/2012,64.43,Stationery
+Demi Taylor,London,21/12/2014,456.88,Vehicle fuel
+Demi Taylor,London,15/03/2016,316.38,Entertaining
+Ethan Wells,London,13/07/2014,78.46,Meals
+Callum Knight,London,04/01/2015,124.28,Office equipment
+Noah Johnson,London,19/04/2014,139.43,Online expenses
+Harrison Hart,London,23/06/2014,42.67,Research
+Ethan Wells,London,29/12/2016,47.76,Phone
+Noah Johnson,London,19/02/2013,345.85,Accommodation
+Callum Knight,London,19/08/2016,554.27,Public transport
+Reuben Scott,London,03/02/2015,286.51,Travel
+Ethan Wells,London,13/05/2013,384.92,Computer equipment
+Demi Taylor,London,08/11/2013,227.53,Public transport
+Reuben Scott,London,17/08/2012,134.41,Office equipment
+Callum Knight,London,16/04/2015,222.44,Computer equipment
+Noah Johnson,London,29/09/2016,92.33,Miscellaneous
+Harrison Hart,London,03/07/2012,112.38,Bank charges
+Tyler Pearson,London,29/05/2012,64.86,Stationery
+Tyler Pearson,London,18/04/2014,119.38,Travel
+Callum Knight,London,02/05/2015,179.46,Vehicle fuel
+Harrison Hart,London,01/06/2012,81.34,Stationery
+Callum Knight,London,21/04/2015,117.57,Research
+Alfie Saunders,London,26/11/2015,554.40,Accommodation
+Alfie Saunders,London,16/09/2013,10.68,Online expenses
+Callum Knight,London,20/12/2014,137.12,Research
+Tyler Pearson,London,30/03/2013,102.28,Postage
+Demi Taylor,London,08/03/2016,48.40,Vehicle mileage
+Alfie Saunders,London,05/10/2013,426.76,Vehicle fuel
+Reuben Scott,London,14/02/2012,103.09,Online expenses
+Noah Johnson,London,06/08/2013,319.92,Computer equipment
+Callum Knight,London,05/08/2016,98.70,Phone
+Reuben Scott,London,23/05/2016,125.19,Meals
+Alfie Saunders,London,22/04/2012,87.55,Vehicle maintenance
+Demi Taylor,London,15/07/2014,197.36,Vehicle fuel
+Noah Johnson,London,04/07/2014,53.94,Entertaining
+Tyler Pearson,London,27/05/2012,103.06,Online expenses
+Demi Taylor,London,13/05/2013,399.38,Public transport
+Alfie Saunders,London,10/02/2012,96.13,Miscellaneous
+Callum Knight,London,16/06/2012,159.66,Entertaining
+Callum Knight,London,07/03/2014,73.17,Research
+Callum Knight,London,29/01/2012,354.60,Vehicle fuel
+Demi Taylor,London,02/06/2015,120.86,Phone
+Demi Taylor,London,11/10/2015,104.64,Bank charges
+Reuben Scott,London,22/02/2015,25.97,Online expenses
+Callum Knight,London,19/08/2016,288.40,Travel
+Alfie Saunders,London,28/10/2012,74.84,Office equipment
+Alfie Saunders,London,30/05/2016,112.40,Phone
+Ethan Wells,London,29/05/2014,155.75,Public transport
+Harrison Hart,London,01/05/2014,155.61,Computer equipment
+Demi Taylor,London,05/10/2014,479.67,Miscellaneous
+Tyler Pearson,London,30/11/2013,108.15,Research
+Alfie Saunders,London,13/09/2015,149.91,Research
+Ethan Wells,London,30/05/2013,73.09,Postage
+Noah Johnson,London,28/11/2012,50.51,Accommodation
+Alfie Saunders,London,29/10/2013,189.61,Accommodation
+Callum Knight,London,18/11/2015,75.31,Stationery
+Demi Taylor,London,07/03/2014,23.63,Research
+Callum Knight,London,02/11/2014,116.59,Online expenses
+Alfie Saunders,London,21/11/2013,131.21,Vehicle maintenance
+Demi Taylor,London,19/09/2014,20.12,Research
+Alfie Saunders,London,26/07/2016,4.32,Office equipment
+Callum Knight,London,23/10/2013,402.45,Computer equipment
+Noah Johnson,London,12/03/2016,289.22,Public transport
+Noah Johnson,London,16/07/2012,84.29,Vehicle maintenance
+Noah Johnson,London,01/09/2016,346.37,Miscellaneous
+Callum Knight,London,25/07/2013,475.69,Public transport
+Callum Knight,London,03/12/2013,544.12,Public transport
+Ethan Wells,London,02/05/2013,271.93,Computer equipment
+Harrison Hart,London,27/04/2013,443.73,Miscellaneous
+Ethan Wells,London,15/05/2012,132.01,Postage
+Harrison Hart,London,08/11/2016,101.33,Bank charges
+Tyler Pearson,London,18/04/2012,131.79,Office equipment
+Tyler Pearson,London,25/07/2012,176.26,Vehicle fuel
+Tyler Pearson,London,28/12/2015,129.09,Accommodation
+Reuben Scott,London,20/10/2013,82.84,Meals
+Ethan Wells,London,06/09/2015,80.99,Postage
+Noah Johnson,London,27/05/2016,150.15,Computer equipment
+Demi Taylor,London,11/10/2013,201.68,Computer equipment
+Noah Johnson,London,31/01/2015,115.37,Phone
+Demi Taylor,London,12/06/2015,547.12,Public transport
+Harrison Hart,London,14/03/2014,17.10,Phone
+Ethan Wells,London,13/01/2014,477.41,Vehicle fuel
+Harrison Hart,London,23/04/2014,419.08,Vehicle fuel
+Reuben Scott,London,18/01/2016,526.76,Public transport
+Reuben Scott,London,28/12/2013,139.61,Online expenses
+Noah Johnson,London,17/09/2013,153.54,Vehicle mileage
+Alfie Saunders,London,12/02/2016,376.77,Computer equipment
+Alfie Saunders,London,07/03/2012,3.98,Research
+Harrison Hart,London,18/08/2012,35.00,Research
+Callum Knight,London,08/05/2015,98.32,Postage
+Alfie Saunders,London,31/01/2016,45.00,Office equipment
+Harrison Hart,London,04/03/2012,22.72,Computer equipment
+Noah Johnson,London,09/02/2014,136.44,Online expenses
+Ethan Wells,London,13/12/2015,92.94,Phone
+Tyler Pearson,London,26/01/2012,278.79,Miscellaneous
+Harrison Hart,London,14/05/2016,93.57,Vehicle maintenance
+Ethan Wells,London,26/06/2016,149.99,Online expenses
+Callum Knight,London,04/06/2015,80.39,Public transport
+Alfie Saunders,London,07/05/2014,104.04,Research
+Demi Taylor,London,07/04/2015,454.07,Computer equipment
+Alfie Saunders,London,19/09/2014,155.86,Travel
+Tyler Pearson,London,22/07/2013,425.63,Entertaining
+Callum Knight,London,13/02/2013,534.26,Accommodation
+Tyler Pearson,London,16/05/2016,52.11,Office equipment
+Alfie Saunders,London,27/04/2014,270.31,Vehicle fuel
+Callum Knight,London,28/03/2014,464.19,Computer equipment
+Reuben Scott,London,22/03/2014,81.99,Stationery
+Callum Knight,London,10/05/2016,64.96,Bank charges
+Harrison Hart,London,28/05/2015,44.48,Bank charges
+Harrison Hart,London,18/03/2013,185.58,Travel
+Callum Knight,London,01/06/2015,53.03,Vehicle mileage
+Alfie Saunders,London,15/01/2012,118.65,Online expenses
+Demi Taylor,London,22/12/2014,118.99,Vehicle maintenance
+Demi Taylor,London,08/03/2013,55.36,Vehicle mileage
+Noah Johnson,London,07/03/2015,406.20,Computer equipment
+Callum Knight,London,01/02/2016,34.62,Accommodation
+Alfie Saunders,London,04/11/2012,136.28,Postage
+Demi Taylor,London,30/11/2014,485.35,Public transport
+Callum Knight,London,26/09/2016,80.19,Research
+Ethan Wells,London,05/03/2012,168.65,Public transport
+Tyler Pearson,London,21/06/2012,71.10,Phone
+Noah Johnson,London,01/05/2016,43.84,Vehicle maintenance
+Alfie Saunders,London,21/07/2013,121.25,Stationery
+Tyler Pearson,London,17/01/2012,125.98,Stationery
+Reuben Scott,London,11/06/2013,28.95,Office equipment
+Demi Taylor,London,27/01/2013,195.13,Vehicle fuel
+Alfie Saunders,London,23/06/2012,99.00,Office equipment
+Harrison Hart,London,01/07/2016,513.50,Public transport
+Alfie Saunders,London,27/09/2015,218.01,Accommodation
+Noah Johnson,London,04/11/2015,347.72,Miscellaneous
+Callum Knight,London,22/05/2016,54.30,Vehicle mileage
+Reuben Scott,London,23/08/2013,59.69,Travel
+Alfie Saunders,London,14/02/2015,112.51,Bank charges
+Demi Taylor,London,14/10/2013,92.68,Miscellaneous
+Alfie Saunders,London,05/10/2013,133.47,Meals
+Ethan Wells,London,04/03/2012,513.63,Vehicle fuel
+Demi Taylor,London,25/11/2012,134.20,Office equipment
+Harrison Hart,London,13/12/2014,63.33,Vehicle fuel
+Tyler Pearson,London,06/09/2012,9.55,Stationery
+Reuben Scott,London,21/02/2012,283.14,Accommodation
+Tyler Pearson,London,14/09/2012,473.27,Vehicle fuel
+Reuben Scott,London,25/07/2014,280.09,Accommodation
+Alfie Saunders,London,20/07/2015,91.42,Online expenses
+Demi Taylor,London,24/08/2014,50.02,Phone
+Demi Taylor,London,11/01/2015,365.76,Public transport
+Reuben Scott,London,25/08/2013,517.18,Vehicle fuel
+Alfie Saunders,London,16/10/2015,125.23,Office equipment
+Tyler Pearson,London,02/08/2015,137.60,Meals
+Ethan Wells,London,02/07/2014,153.51,Office equipment
+Tyler Pearson,London,13/10/2016,188.00,Miscellaneous
+Tyler Pearson,London,16/03/2016,262.80,Travel
+Tyler Pearson,London,27/09/2016,7.51,Postage
+Noah Johnson,London,16/10/2014,92.13,Meals
+Ethan Wells,London,05/04/2013,84.65,Phone
+Tyler Pearson,London,22/12/2014,29.47,Office equipment
+Alfie Saunders,London,12/08/2013,52.98,Public transport
+Ethan Wells,London,14/01/2014,37.78,Public transport
+Alfie Saunders,London,25/02/2014,118.97,Office equipment
+Callum Knight,London,15/03/2014,467.37,Public transport
+Callum Knight,London,30/12/2012,32.93,Stationery
+Demi Taylor,London,30/04/2015,153.98,Research
+Harrison Hart,London,09/04/2014,66.81,Miscellaneous
+Tyler Pearson,London,22/10/2013,127.64,Office equipment
+Callum Knight,London,12/02/2015,6.56,Research
+Callum Knight,London,08/01/2016,383.91,Computer equipment
+Alfie Saunders,London,25/03/2014,223.01,Public transport
+Tyler Pearson,London,11/06/2015,510.03,Vehicle fuel
+Harrison Hart,London,02/07/2012,116.49,Online expenses
+Ethan Wells,London,02/07/2013,30.72,Vehicle maintenance
+Demi Taylor,London,05/08/2012,113.53,Research
+Alfie Saunders,London,23/01/2014,144.37,Office equipment
+Reuben Scott,London,06/03/2014,501.28,Travel
+Callum Knight,London,12/03/2012,295.91,Public transport
+Noah Johnson,London,26/02/2016,59.54,Online expenses
+Alfie Saunders,London,02/12/2013,328.90,Vehicle fuel
+Ethan Wells,London,30/09/2012,138.14,Bank charges
+Tyler Pearson,London,07/03/2012,76.16,Accommodation
+Reuben Scott,London,23/11/2012,5.23,Meals
+Tyler Pearson,London,30/09/2013,188.76,Entertaining
+Ethan Wells,London,26/08/2013,53.48,Phone
+Noah Johnson,London,10/10/2012,137.63,Computer equipment
+Demi Taylor,London,06/04/2015,40.10,Vehicle mileage
+Noah Johnson,London,09/01/2015,202.85,Vehicle fuel
+Noah Johnson,London,11/12/2012,139.67,Vehicle mileage
+Tyler Pearson,London,19/05/2014,422.89,Miscellaneous
+Ethan Wells,London,10/08/2016,142.63,Stationery
+Reuben Scott,London,01/04/2014,140.58,Office equipment
+Demi Taylor,London,09/08/2012,31.22,Entertaining
+Demi Taylor,London,14/03/2013,27.43,Bank charges
+Harrison Hart,London,01/02/2014,436.52,Computer equipment
+Demi Taylor,London,03/07/2012,235.32,Accommodation
+Callum Knight,London,04/07/2014,61.73,Miscellaneous
+Demi Taylor,London,03/06/2013,194.39,Entertaining
+Demi Taylor,London,05/06/2012,67.10,Stationery
+Alfie Saunders,London,23/11/2015,51.48,Vehicle maintenance
+Tyler Pearson,London,09/03/2013,144.52,Phone
+Callum Knight,London,15/06/2012,141.71,Online expenses
+Tyler Pearson,London,12/06/2013,343.16,Public transport
+Demi Taylor,London,14/03/2012,350.13,Entertaining
+Harrison Hart,London,22/09/2014,515.91,Travel
+Demi Taylor,London,24/12/2016,31.13,Office equipment
+Reuben Scott,London,30/10/2015,145.10,Office equipment
+Ethan Wells,London,29/08/2012,22.39,Stationery
+Alfie Saunders,London,08/07/2016,367.89,Accommodation
+Ethan Wells,London,24/01/2016,120.72,Bank charges
+Callum Knight,London,01/12/2013,298.26,Computer equipment
+Callum Knight,London,20/07/2015,8.68,Bank charges
+Demi Taylor,London,28/02/2012,25.18,Miscellaneous
+Callum Knight,London,19/07/2012,299.47,Public transport
+Reuben Scott,London,24/07/2013,218.47,Entertaining
+Harrison Hart,London,14/10/2014,282.93,Entertaining
+Tyler Pearson,London,18/04/2012,152.43,Miscellaneous
+Tyler Pearson,London,10/11/2015,37.82,Online expenses
+Noah Johnson,London,11/12/2012,110.04,Bank charges
+Alfie Saunders,London,06/10/2013,83.42,Postage
+Reuben Scott,London,25/07/2014,373.38,Entertaining
+Callum Knight,London,26/01/2012,27.22,Meals
+Ethan Wells,London,25/03/2013,94.59,Online expenses
+Noah Johnson,London,12/11/2015,238.76,Vehicle fuel
+Harrison Hart,London,01/05/2013,66.89,Online expenses
+Tyler Pearson,London,05/06/2013,400.00,Travel
+Harrison Hart,London,08/02/2014,438.41,Vehicle fuel
+Alfie Saunders,London,07/03/2016,63.39,Research
+Ethan Wells,London,10/11/2015,94.31,Postage
+Alfie Saunders,London,20/05/2013,95.92,Vehicle mileage
+Harrison Hart,London,14/09/2016,548.54,Miscellaneous
+Harrison Hart,London,16/05/2013,183.65,Public transport
+Tyler Pearson,London,20/01/2012,40.63,Postage
+Ethan Wells,London,14/01/2015,6.32,Meals
+Demi Taylor,London,16/06/2016,13.57,Online expenses
+Callum Knight,London,29/04/2014,55.92,Research
+Harrison Hart,London,23/02/2014,116.44,Postage
+Harrison Hart,London,10/06/2014,143.76,Research
+Noah Johnson,London,28/10/2016,102.90,Vehicle mileage
+Alfie Saunders,London,13/05/2015,259.77,Vehicle fuel
+Noah Johnson,London,15/02/2014,494.44,Public transport
+Tyler Pearson,London,17/11/2016,84.43,Entertaining
+Demi Taylor,London,09/03/2013,76.66,Vehicle maintenance
+Demi Taylor,London,12/10/2016,101.18,Phone
+Reuben Scott,London,26/12/2012,73.57,Travel
+Harrison Hart,London,22/01/2016,508.74,Computer equipment
+Callum Knight,London,23/10/2016,91.31,Bank charges
+Demi Taylor,London,04/09/2012,356.12,Computer equipment
+Callum Knight,London,02/04/2013,84.46,Vehicle mileage
+Noah Johnson,London,17/08/2014,176.67,Computer equipment
+Demi Taylor,London,09/09/2013,155.03,Miscellaneous
+Callum Knight,London,06/12/2014,39.81,Vehicle mileage
+Demi Taylor,London,04/11/2013,130.69,Research
+Noah Johnson,London,22/06/2013,58.64,Research
+Ethan Wells,London,21/11/2012,172.63,Accommodation
+Noah Johnson,London,06/10/2013,220.60,Computer equipment
+Harrison Hart,London,02/03/2015,110.23,Phone
+Tyler Pearson,London,09/10/2013,13.29,Online expenses
+Demi Taylor,London,23/11/2012,100.51,Postage
+Demi Taylor,London,17/06/2014,152.56,Vehicle fuel
+Ethan Wells,London,10/08/2014,54.15,Vehicle mileage
+Demi Taylor,London,13/02/2012,338.81,Public transport
+Alfie Saunders,London,09/12/2013,394.07,Entertaining
+Demi Taylor,London,23/12/2015,300.74,Public transport
+Harrison Hart,London,05/03/2012,16.38,Public transport
+Alfie Saunders,London,15/09/2014,350.54,Accommodation
+Ethan Wells,London,18/10/2015,21.26,Office equipment
+Noah Johnson,London,13/03/2016,71.78,Meals
+Callum Knight,London,02/09/2015,23.32,Postage
+Harrison Hart,London,19/07/2015,321.88,Public transport
+Alfie Saunders,London,13/05/2013,48.17,Bank charges
+Callum Knight,London,06/01/2015,97.59,Meals
+Callum Knight,London,19/12/2015,487.72,Vehicle fuel
+Harrison Hart,London,18/10/2015,222.06,Public transport
+Harrison Hart,London,07/01/2016,474.77,Entertaining
+Callum Knight,London,22/06/2012,9.28,Meals
+Tyler Pearson,London,05/04/2015,96.72,Bank charges
+Reuben Scott,London,16/10/2016,81.38,Research
+Alfie Saunders,London,12/01/2014,94.57,Postage
+Tyler Pearson,London,06/02/2013,140.13,Public transport
+Demi Taylor,London,19/08/2015,396.98,Accommodation
+Noah Johnson,London,10/12/2014,62.38,Office equipment
+Noah Johnson,London,21/08/2016,52.75,Vehicle maintenance
+Tyler Pearson,London,06/10/2015,540.15,Miscellaneous
+Harrison Hart,London,05/11/2012,65.61,Bank charges
+Callum Knight,London,02/03/2013,112.52,Vehicle mileage
+Alfie Saunders,London,31/05/2012,150.14,Postage
+Callum Knight,London,15/03/2013,92.07,Accommodation
+Demi Taylor,London,11/06/2013,123.77,Travel
+Reuben Scott,London,12/10/2015,121.78,Office equipment
+Ethan Wells,London,28/01/2016,79.76,Accommodation
+Tyler Pearson,London,06/12/2015,253.70,Travel
+Callum Knight,London,05/06/2012,68.12,Vehicle fuel
+Harrison Hart,London,15/01/2015,114.23,Phone
+Harrison Hart,London,29/10/2012,128.36,Research
+Demi Taylor,London,26/09/2015,50.68,Vehicle maintenance
+Harrison Hart,London,03/09/2014,303.04,Miscellaneous
+Reuben Scott,London,03/10/2016,103.01,Bank charges
+Tyler Pearson,London,13/01/2013,45.26,Vehicle mileage
+Harrison Hart,London,16/01/2015,341.91,Vehicle fuel
+Alfie Saunders,London,08/03/2014,76.95,Vehicle maintenance
+Callum Knight,London,22/01/2013,406.34,Accommodation
+Demi Taylor,London,29/03/2013,160.03,Travel
+Reuben Scott,London,10/04/2015,96.08,Accommodation
+Harrison Hart,London,03/02/2015,448.25,Miscellaneous
+Callum Knight,London,16/11/2013,340.09,Computer equipment
+Demi Taylor,London,24/03/2016,70.96,Vehicle mileage
+Alfie Saunders,London,20/10/2012,96.66,Meals
+Ethan Wells,London,30/08/2015,23.59,Vehicle maintenance
+Alfie Saunders,London,11/11/2013,149.21,Stationery
+Ethan Wells,London,19/01/2016,8.13,Meals
+Callum Knight,London,08/02/2015,142.86,Vehicle maintenance
+Callum Knight,London,03/03/2013,359.57,Computer equipment
+Demi Taylor,London,18/06/2014,43.36,Research
+Demi Taylor,London,02/01/2014,76.09,Postage
+Ethan Wells,London,25/12/2014,115.06,Meals
+Reuben Scott,London,22/05/2013,531.18,Accommodation
+Noah Johnson,London,06/09/2013,141.55,Entertaining
+Alfie Saunders,London,13/11/2015,55.40,Meals
+Callum Knight,London,18/02/2012,516.12,Vehicle fuel
+Reuben Scott,London,06/11/2013,99.22,Public transport
+Tyler Pearson,London,14/05/2013,203.51,Entertaining
+Ethan Wells,London,26/10/2014,139.00,Online expenses
+Noah Johnson,London,18/11/2014,216.59,Vehicle fuel
+Demi Taylor,London,30/08/2012,334.79,Accommodation
+Harrison Hart,London,08/06/2015,217.92,Accommodation
+Callum Knight,London,04/04/2016,143.91,Stationery
+Ethan Wells,London,19/04/2013,158.54,Miscellaneous
+Demi Taylor,London,22/12/2015,173.31,Vehicle fuel
+Callum Knight,London,18/12/2014,361.20,Miscellaneous
+Reuben Scott,London,26/03/2012,12.69,Stationery
+Reuben Scott,London,29/09/2012,40.26,Office equipment
+Ethan Wells,London,03/09/2014,294.62,Miscellaneous
+Tyler Pearson,London,17/06/2015,100.31,Vehicle maintenance
+Harrison Hart,London,27/10/2014,74.56,Vehicle maintenance
+Demi Taylor,London,16/07/2016,51.21,Office equipment
+Ethan Wells,London,16/04/2012,6.21,Online expenses
+Ethan Wells,London,11/06/2013,284.51,Miscellaneous
+Tyler Pearson,London,04/07/2013,115.12,Vehicle mileage
+Ethan Wells,London,20/12/2013,177.48,Public transport
+Reuben Scott,London,18/10/2012,529.41,Miscellaneous
+Reuben Scott,London,27/03/2015,78.96,Online expenses
+Tyler Pearson,London,24/08/2013,82.08,Vehicle mileage
+Demi Taylor,London,18/04/2013,34.19,Computer equipment
+Reuben Scott,London,15/08/2016,285.60,Travel
+Reuben Scott,London,17/04/2013,284.87,Entertaining
+Callum Knight,London,16/03/2014,32.99,Vehicle mileage
+Harrison Hart,London,29/10/2012,44.47,Stationery
+Demi Taylor,London,23/09/2014,498.35,Miscellaneous
+Callum Knight,London,28/10/2015,491.99,Vehicle fuel
+Ethan Wells,London,07/06/2015,189.69,Miscellaneous
+Callum Knight,London,08/09/2016,104.92,Vehicle maintenance
+Tyler Pearson,London,04/04/2015,33.05,Research
+Ethan Wells,London,18/06/2013,124.43,Vehicle maintenance
+Callum Knight,London,25/08/2016,325.34,Miscellaneous
+Ethan Wells,London,03/11/2015,20.61,Public transport
+Noah Johnson,London,02/07/2015,322.30,Travel
+Tyler Pearson,London,06/02/2016,209.82,Travel
+Tyler Pearson,London,23/10/2013,489.70,Entertaining
+Ethan Wells,London,18/01/2013,312.69,Travel
+Tyler Pearson,London,05/04/2012,62.92,Phone
+Alfie Saunders,London,04/12/2014,380.35,Accommodation
+Reuben Scott,London,03/08/2012,51.27,Meals
+Alfie Saunders,London,17/12/2015,88.87,Stationery
+Noah Johnson,London,31/12/2016,97.25,Online expenses
+Callum Knight,London,29/04/2013,444.32,Computer equipment
+Demi Taylor,London,04/03/2013,131.89,Stationery
+Ethan Wells,London,08/12/2012,108.98,Phone
+Ethan Wells,London,20/02/2014,183.94,Public transport
+Tyler Pearson,London,14/04/2016,536.90,Travel
+Reuben Scott,London,24/03/2014,192.06,Miscellaneous
+Callum Knight,London,04/04/2013,7.12,Phone
+Harrison Hart,London,09/05/2014,489.78,Public transport
+Tyler Pearson,London,31/03/2016,104.99,Entertaining
+Alfie Saunders,London,14/02/2013,481.62,Travel
+Callum Knight,London,27/11/2015,369.78,Computer equipment
+Alfie Saunders,London,28/02/2012,37.35,Online expenses
+Ethan Wells,London,01/11/2013,124.25,Travel
+Demi Taylor,London,13/04/2012,101.08,Accommodation
+Reuben Scott,London,19/10/2015,132.98,Online expenses
+Reuben Scott,London,19/03/2014,165.34,Public transport
+Tyler Pearson,London,20/06/2016,91.65,Online expenses
+Tyler Pearson,London,17/03/2012,321.33,Computer equipment
+Reuben Scott,London,11/06/2014,264.33,Accommodation
+Harrison Hart,London,14/02/2012,35.60,Postage
+Callum Knight,London,06/05/2014,41.48,Miscellaneous
+Tyler Pearson,London,15/01/2015,99.54,Accommodation
+Callum Knight,London,03/02/2012,92.41,Office equipment
+Callum Knight,London,22/08/2013,84.75,Entertaining
+Alfie Saunders,London,21/08/2015,31.98,Vehicle mileage
+Alfie Saunders,London,28/04/2013,306.08,Travel
+Alfie Saunders,London,07/01/2016,87.60,Postage
+Tyler Pearson,London,14/12/2015,55.26,Stationery
+Ethan Wells,London,07/10/2016,29.16,Bank charges
+Callum Knight,London,16/08/2012,498.80,Entertaining
+Ethan Wells,London,09/12/2015,7.17,Office equipment
+Demi Taylor,London,30/08/2015,148.73,Meals
+Reuben Scott,London,30/06/2015,172.88,Travel
+Reuben Scott,London,16/10/2013,140.25,Vehicle maintenance
+Ethan Wells,London,21/04/2014,351.07,Travel
+Callum Knight,London,26/01/2013,17.65,Meals
+Callum Knight,London,12/01/2016,122.91,Entertaining
+Demi Taylor,London,21/10/2016,42.34,Public transport
+Reuben Scott,London,06/01/2012,90.08,Meals
+Demi Taylor,London,20/07/2013,358.90,Accommodation
+Harrison Hart,London,27/09/2015,62.81,Vehicle maintenance
+Reuben Scott,London,19/01/2012,449.56,Accommodation
+Ethan Wells,London,21/01/2012,52.87,Vehicle mileage
+Ethan Wells,London,04/07/2013,346.79,Computer equipment
+Alfie Saunders,London,08/02/2013,14.22,Meals
+Harrison Hart,London,28/05/2015,62.08,Travel
+Reuben Scott,London,23/04/2014,70.52,Public transport
+Callum Knight,London,02/03/2015,144.81,Office equipment
+Ethan Wells,London,28/04/2016,329.61,Travel
+Demi Taylor,London,15/08/2016,49.19,Phone
+Tyler Pearson,London,23/01/2012,14.44,Vehicle fuel
+Ethan Wells,London,01/11/2015,212.91,Miscellaneous
+Callum Knight,London,10/12/2015,117.47,Stationery
+Reuben Scott,London,23/04/2016,29.64,Vehicle maintenance
+Harrison Hart,London,22/09/2013,40.42,Research
+Noah Johnson,London,23/04/2012,1.95,Bank charges
+Ethan Wells,London,20/08/2015,528.24,Miscellaneous
+Tyler Pearson,London,16/01/2015,504.78,Vehicle fuel
+Noah Johnson,London,11/09/2014,148.61,Vehicle maintenance
+Demi Taylor,London,01/07/2012,400.83,Miscellaneous
+Callum Knight,London,25/06/2014,148.57,Bank charges
+Demi Taylor,London,26/11/2015,373.18,Travel
+Harrison Hart,London,05/10/2016,82.47,Postage
+Tyler Pearson,London,02/06/2016,123.35,Postage
+Callum Knight,London,01/09/2013,42.91,Vehicle maintenance
+Demi Taylor,London,18/01/2013,59.77,Vehicle maintenance
+Tyler Pearson,London,09/01/2013,225.28,Accommodation
+Alfie Saunders,London,03/03/2012,113.66,Stationery
+Callum Knight,London,27/03/2016,40.15,Entertaining
+Alfie Saunders,London,13/04/2013,126.94,Online expenses
+Reuben Scott,London,20/01/2015,60.05,Online expenses
+Ethan Wells,London,18/12/2012,137.62,Phone
+Callum Knight,London,21/08/2015,286.30,Public transport
+Noah Johnson,London,15/11/2012,256.67,Accommodation
+Demi Taylor,London,22/11/2012,126.15,Meals
+Tyler Pearson,London,28/10/2014,260.20,Accommodation
+Noah Johnson,London,27/09/2015,142.30,Bank charges
+Tyler Pearson,London,16/12/2014,104.22,Vehicle mileage
+Noah Johnson,London,22/10/2015,333.48,Vehicle fuel
+Harrison Hart,London,07/07/2016,104.95,Research
+Callum Knight,London,28/01/2013,3.91,Online expenses
+Callum Knight,London,23/03/2015,22.97,Vehicle mileage
+Demi Taylor,London,26/12/2014,214.70,Vehicle fuel
+Alfie Saunders,London,05/09/2012,43.83,Office equipment
+Reuben Scott,London,10/05/2016,119.81,Office equipment
+Harrison Hart,London,10/01/2016,96.71,Meals
+Demi Taylor,London,12/12/2016,453.24,Entertaining
+Tyler Pearson,London,22/04/2014,144.63,Meals
+Callum Knight,London,09/06/2016,56.66,Phone
+Tyler Pearson,London,29/02/2012,96.50,Phone
+Noah Johnson,London,22/07/2015,79.94,Bank charges
+Reuben Scott,London,06/06/2016,445.21,Miscellaneous
+Alfie Saunders,London,11/07/2014,262.78,Miscellaneous
+Reuben Scott,London,02/06/2016,147.36,Vehicle mileage
+Tyler Pearson,London,02/08/2014,262.63,Vehicle fuel
+Callum Knight,London,27/07/2012,105.25,Travel
+Harrison Hart,London,07/03/2016,31.36,Phone
+Tyler Pearson,London,21/03/2012,552.99,Travel
+Harrison Hart,London,13/05/2013,22.43,Meals
+Tyler Pearson,London,05/03/2015,69.35,Online expenses
+Demi Taylor,London,17/08/2012,440.76,Computer equipment
+Noah Johnson,London,26/04/2013,266.44,Travel
+Callum Knight,London,08/04/2016,480.16,Vehicle fuel
+Alfie Saunders,London,03/10/2012,176.96,Miscellaneous
+Tyler Pearson,London,01/04/2012,217.63,Travel
+Alfie Saunders,London,20/08/2013,29.01,Bank charges
+Demi Taylor,London,11/12/2016,26.91,Office equipment
+Demi Taylor,London,08/04/2016,111.80,Phone
+Ethan Wells,London,18/03/2013,26.38,Postage
+Harrison Hart,London,23/01/2016,78.18,Vehicle mileage
+Reuben Scott,London,30/05/2015,25.85,Meals
+Harrison Hart,London,22/02/2015,141.22,Postage
+Ethan Wells,London,08/03/2014,59.47,Travel
+Demi Taylor,London,21/01/2016,36.87,Travel
+Noah Johnson,London,02/05/2014,1.96,Vehicle mileage
+Harrison Hart,London,17/01/2015,6.86,Research
+Ethan Wells,London,12/08/2015,65.36,Vehicle mileage
+Tyler Pearson,London,25/01/2015,340.59,Entertaining
+Callum Knight,London,03/02/2015,94.40,Meals
+Ethan Wells,London,14/02/2014,184.89,Accommodation
+Demi Taylor,London,28/09/2012,344.94,Public transport
+Tyler Pearson,London,08/07/2015,133.53,Vehicle fuel
+Tyler Pearson,London,27/09/2014,14.57,Vehicle mileage
+Callum Knight,London,15/02/2012,141.88,Meals
+Tyler Pearson,London,18/03/2012,476.05,Entertaining
+Demi Taylor,London,04/01/2012,17.27,Bank charges
+Demi Taylor,London,27/03/2015,154.34,Public transport
+Alfie Saunders,London,07/11/2012,146.35,Office equipment
+Harrison Hart,London,13/11/2016,24.31,Vehicle maintenance
+Reuben Scott,London,25/10/2013,439.34,Public transport
+Noah Johnson,London,20/10/2013,34.89,Vehicle maintenance
+Harrison Hart,London,18/04/2012,27.74,Research
+Reuben Scott,London,11/11/2015,129.46,Research
+Callum Knight,London,09/10/2014,3.66,Vehicle mileage
+Alfie Saunders,London,22/02/2013,247.68,Vehicle fuel
+Reuben Scott,London,27/01/2016,155.98,Entertaining
+Tyler Pearson,London,17/03/2014,435.82,Travel
+Tyler Pearson,London,14/02/2012,91.68,Research
+Noah Johnson,London,16/01/2016,141.02,Stationery
+Callum Knight,London,09/06/2012,92.94,Office equipment
+Alfie Saunders,London,04/12/2014,81.57,Vehicle mileage
+Alfie Saunders,London,21/07/2014,125.60,Postage
+Tyler Pearson,London,07/04/2013,227.07,Vehicle fuel
+Reuben Scott,London,11/04/2016,387.47,Computer equipment
+Harrison Hart,London,12/11/2012,250.93,Miscellaneous
+Callum Knight,London,12/08/2012,238.97,Public transport
+Ethan Wells,London,29/04/2012,106.15,Research
+Reuben Scott,London,03/08/2013,68.69,Bank charges
+Callum Knight,London,22/03/2014,76.36,Online expenses
+Tyler Pearson,London,20/03/2013,83.12,Computer equipment
+Harrison Hart,London,28/03/2012,14.49,Postage
+Alfie Saunders,London,06/05/2015,144.99,Office equipment
+Demi Taylor,London,02/07/2014,407.36,Public transport
+Alfie Saunders,London,18/12/2014,185.46,Vehicle fuel
+Tyler Pearson,London,18/08/2012,219.14,Accommodation
+Demi Taylor,London,23/01/2012,10.48,Public transport
+Alfie Saunders,London,30/06/2014,106.86,Meals
+Harrison Hart,London,19/04/2013,143.08,Entertaining
+Demi Taylor,London,11/02/2012,52.10,Vehicle mileage
+Harrison Hart,London,01/10/2014,491.65,Accommodation
+Harrison Hart,London,10/09/2014,545.30,Public transport
+Noah Johnson,London,12/03/2015,141.15,Stationery
+Tyler Pearson,London,20/01/2013,512.46,Entertaining
+Tyler Pearson,London,13/07/2014,30.77,Accommodation
+Reuben Scott,London,15/09/2016,99.57,Vehicle maintenance
+Demi Taylor,London,24/08/2014,40.58,Vehicle maintenance
+Demi Taylor,London,03/07/2014,124.70,Postage
+Reuben Scott,London,22/01/2014,191.64,Public transport
+Demi Taylor,London,08/09/2012,334.69,Accommodation
+Demi Taylor,London,09/09/2016,15.44,Computer equipment
+Noah Johnson,London,23/06/2012,241.67,Travel
+Demi Taylor,London,11/08/2013,154.30,Travel
+Harrison Hart,London,26/01/2015,69.23,Vehicle mileage
+Alfie Saunders,London,11/08/2016,82.47,Entertaining
+Demi Taylor,London,23/07/2014,57.86,Office equipment
+Callum Knight,London,18/12/2013,14.60,Public transport
+Ethan Wells,London,28/01/2012,118.11,Entertaining
+Demi Taylor,London,13/07/2015,79.68,Office equipment
+Ethan Wells,London,16/06/2013,18.51,Phone
+Ethan Wells,London,17/07/2016,59.17,Miscellaneous
+Tyler Pearson,London,30/04/2012,136.03,Vehicle maintenance
+Tyler Pearson,London,08/11/2015,90.79,Office equipment
+Callum Knight,London,13/11/2016,3.32,Phone
+Alfie Saunders,London,15/09/2016,20.49,Meals
+Reuben Scott,London,07/05/2013,40.91,Stationery
+Harrison Hart,London,04/09/2016,462.12,Travel
+Tyler Pearson,London,01/07/2014,55.93,Vehicle maintenance
+Noah Johnson,London,03/01/2015,370.26,Travel
+Ethan Wells,London,16/08/2016,340.05,Miscellaneous
+Callum Knight,London,22/04/2014,141.93,Office equipment
+Noah Johnson,London,25/12/2013,554.48,Accommodation
+Alfie Saunders,London,16/04/2016,44.17,Phone
+Noah Johnson,London,26/10/2015,41.17,Vehicle mileage
+Ethan Wells,London,21/09/2015,72.17,Office equipment
+Alfie Saunders,London,30/03/2013,92.95,Office equipment
+Noah Johnson,London,07/02/2016,263.57,Accommodation
+Reuben Scott,London,22/09/2013,65.12,Online expenses
+Noah Johnson,London,12/03/2014,72.11,Phone
+Tyler Pearson,London,13/05/2012,69.09,Research
+Alfie Saunders,London,15/05/2014,36.76,Phone
+Ethan Wells,London,04/08/2013,235.44,Travel
+Callum Knight,London,04/12/2013,12.80,Stationery
+Harrison Hart,London,11/06/2014,128.05,Public transport
+Noah Johnson,London,03/01/2016,108.33,Vehicle fuel
+Noah Johnson,London,08/04/2014,8.39,Postage
+Demi Taylor,London,08/04/2012,36.09,Accommodation
+Reuben Scott,London,16/02/2013,51.15,Stationery
+Noah Johnson,London,02/10/2016,196.63,Entertaining
+Ethan Wells,London,31/07/2013,115.84,Meals
+Harrison Hart,London,01/01/2013,464.38,Public transport
+Tyler Pearson,London,08/01/2015,534.76,Travel
+Reuben Scott,London,18/07/2015,379.47,Accommodation
+Callum Knight,London,11/01/2014,48.36,Stationery
+Alfie Saunders,London,25/07/2012,490.29,Entertaining
+Callum Knight,London,02/12/2015,42.65,Vehicle mileage
+Alfie Saunders,London,10/09/2013,33.80,Online expenses
+Alfie Saunders,London,29/07/2013,216.96,Miscellaneous
+Demi Taylor,London,09/06/2015,244.60,Public transport
+Alfie Saunders,London,17/04/2013,440.09,Miscellaneous
+Demi Taylor,London,28/09/2015,58.44,Meals
+Reuben Scott,London,28/11/2015,22.31,Entertaining
+Demi Taylor,London,08/11/2016,4.75,Accommodation
+Callum Knight,London,11/01/2016,1.02,Bank charges
+Callum Knight,London,22/02/2013,57.45,Stationery
+Noah Johnson,London,09/05/2015,173.31,Travel
+Reuben Scott,London,07/01/2013,4.92,Research
+Tyler Pearson,London,15/06/2015,152.31,Postage
+Tyler Pearson,London,19/10/2013,254.10,Entertaining
+Callum Knight,London,23/05/2012,47.29,Meals
+Alfie Saunders,London,20/05/2015,68.76,Meals
+Noah Johnson,London,18/06/2012,71.12,Stationery
+Noah Johnson,London,22/09/2016,456.23,Entertaining
+Ethan Wells,London,03/03/2013,155.06,Office equipment
+Alfie Saunders,London,28/07/2016,515.27,Public transport
+Alfie Saunders,London,16/09/2015,109.03,Vehicle fuel
+Tyler Pearson,London,09/05/2015,18.29,Travel
+Alfie Saunders,London,08/06/2015,277.44,Miscellaneous
+Ethan Wells,London,02/03/2012,92.02,Meals
+Tyler Pearson,London,08/03/2012,239.02,Accommodation
+Ethan Wells,London,21/10/2016,56.41,Postage
+Ethan Wells,London,10/12/2012,162.38,Accommodation
+Harrison Hart,London,11/02/2014,118.85,Postage
+Tyler Pearson,London,28/11/2015,378.32,Vehicle fuel
+Ethan Wells,London,11/10/2015,64.35,Bank charges
+Callum Knight,London,19/04/2015,11.16,Research
+Alfie Saunders,London,06/08/2014,140.48,Computer equipment
+Callum Knight,London,08/04/2015,168.87,Public transport
+Harrison Hart,London,01/11/2013,318.29,Travel
+Callum Knight,London,01/07/2012,90.02,Vehicle maintenance
+Demi Taylor,London,03/07/2013,150.94,Postage
+Demi Taylor,London,22/03/2013,74.27,Vehicle mileage
+Ethan Wells,London,06/01/2013,218.34,Computer equipment
+Harrison Hart,London,12/02/2012,101.85,Miscellaneous
+Ethan Wells,London,30/03/2014,98.36,Online expenses
+Demi Taylor,London,17/01/2015,361.33,Vehicle fuel
+Tyler Pearson,London,14/10/2014,511.02,Miscellaneous
+Reuben Scott,London,08/03/2015,125.99,Vehicle mileage
+Ethan Wells,London,18/05/2013,94.05,Office equipment
+Demi Taylor,London,18/07/2012,38.89,Office equipment
+Demi Taylor,London,18/12/2015,65.65,Stationery
+Ethan Wells,London,08/08/2014,90.37,Stationery
+Reuben Scott,London,01/10/2013,371.07,Computer equipment
+Demi Taylor,London,08/10/2015,96.31,Entertaining
+Alfie Saunders,London,13/04/2015,391.45,Travel
+Harrison Hart,London,03/04/2012,52.74,Bank charges
+Callum Knight,London,30/07/2016,105.34,Vehicle mileage
+Harrison Hart,London,13/04/2012,431.92,Entertaining
+Reuben Scott,London,06/04/2014,138.99,Bank charges
+Harrison Hart,London,12/08/2015,414.46,Miscellaneous
+Reuben Scott,London,09/05/2012,26.96,Bank charges
+Noah Johnson,London,16/06/2013,276.93,Accommodation
+Noah Johnson,London,05/02/2012,164.07,Travel
+Alfie Saunders,London,05/04/2015,263.23,Miscellaneous
+Demi Taylor,London,06/11/2012,62.00,Postage
+Alfie Saunders,London,05/01/2015,28.48,Research
+Ethan Wells,London,01/12/2013,144.48,Vehicle fuel
+Noah Johnson,London,19/04/2012,356.65,Computer equipment
+Alfie Saunders,London,13/01/2014,394.02,Travel
+Alfie Saunders,London,24/02/2013,439.20,Entertaining
+Noah Johnson,London,18/01/2014,15.64,Vehicle fuel
+Demi Taylor,London,30/10/2013,46.78,Miscellaneous
+Harrison Hart,London,16/05/2014,91.90,Vehicle mileage
+Ethan Wells,London,03/09/2012,68.28,Meals
+Alfie Saunders,London,12/09/2015,35.73,Phone
+Reuben Scott,London,25/02/2013,97.53,Research
+Ethan Wells,London,03/05/2012,201.66,Public transport
+Alfie Saunders,London,10/01/2016,107.16,Entertaining
+Alfie Saunders,London,29/01/2012,278.91,Miscellaneous
+Callum Knight,London,23/08/2016,75.71,Meals
+Reuben Scott,London,01/12/2016,150.26,Accommodation
+Callum Knight,London,13/06/2016,65.61,Online expenses
+Tyler Pearson,London,18/03/2016,68.23,Vehicle fuel
+Harrison Hart,London,20/03/2015,503.06,Vehicle fuel
+Tyler Pearson,London,27/01/2015,145.94,Travel
+Reuben Scott,London,03/10/2013,23.61,Meals
+Callum Knight,London,13/09/2016,91.61,Stationery
+Reuben Scott,London,13/05/2012,154.56,Public transport
+Harrison Hart,London,21/05/2014,175.75,Public transport
+Reuben Scott,London,08/05/2012,64.53,Computer equipment
+Callum Knight,London,27/11/2013,173.99,Computer equipment
+Reuben Scott,London,02/11/2012,152.85,Phone
+Reuben Scott,London,24/03/2016,42.99,Research
+Tyler Pearson,London,06/03/2015,395.81,Public transport
+Alfie Saunders,London,13/10/2015,209.45,Vehicle fuel
+Reuben Scott,London,06/03/2013,337.94,Miscellaneous
+Alfie Saunders,London,19/04/2016,350.50,Computer equipment
+Harrison Hart,London,25/08/2013,372.31,Public transport
+Ethan Wells,London,03/06/2013,207.12,Travel
+Demi Taylor,London,10/09/2015,250.60,Miscellaneous
+Callum Knight,London,13/12/2012,6.32,Postage
+Callum Knight,London,24/09/2013,130.61,Travel
+Ethan Wells,London,14/08/2014,535.79,Accommodation
+Harrison Hart,London,19/06/2014,9.67,Office equipment
+Callum Knight,London,21/12/2014,45.10,Vehicle maintenance
+Demi Taylor,London,04/08/2012,22.16,Online expenses
+Tyler Pearson,London,09/02/2016,90.40,Postage
+Reuben Scott,London,06/11/2016,64.21,Research
+Alfie Saunders,London,27/10/2016,63.65,Postage
+Callum Knight,London,18/08/2015,123.78,Office equipment
+Noah Johnson,London,23/09/2012,35.66,Accommodation
+Tyler Pearson,London,16/03/2012,5.78,Vehicle maintenance
+Ethan Wells,London,22/10/2014,533.86,Entertaining
+Alfie Saunders,London,02/08/2016,421.63,Miscellaneous
+Reuben Scott,London,23/10/2015,126.93,Bank charges
+Tyler Pearson,London,12/02/2012,178.28,Entertaining
+Noah Johnson,London,14/08/2012,91.35,Online expenses
+Noah Johnson,London,27/02/2014,53.00,Bank charges
+Demi Taylor,London,15/04/2012,6.71,Computer equipment
+Ethan Wells,London,30/06/2015,114.81,Computer equipment
+Alfie Saunders,London,08/04/2012,297.62,Accommodation
+Harrison Hart,London,04/10/2012,24.94,Phone

@@ -1,0 +1,14 @@
+SELECT Sales.EventsData.EventID 'Event ID'
+, Sales.EventsClients.ClientID 'Client ID'
+, Sales.EventsClients.Revenue
+, Sales.EventsClients.Rating
+, Sales.EventsData.StartDate 'Start Date'
+, Sales.EventsData.WorkshopID 'Workshop ID'
+, Sales.EventsData.VenueID 'Venue ID'
+, HR.EventsTutors.TutorID 'Tutor ID'
+, HR.EventsTutors.TutorFee 'Tutor Fee'
+FROM	Sales.EventsClients
+INNER JOIN
+Sales.EventsData ON Sales.EventsClients.EventID = Sales.EventsData.EventID
+INNER JOIN
+HR.EventsTutors ON Sales.EventsData.EventID = HR.EventsTutors.EventID

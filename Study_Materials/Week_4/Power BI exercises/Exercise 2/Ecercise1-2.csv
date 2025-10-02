@@ -1,0 +1,91 @@
+Ticker,Company,Price,Change,% Change
+"III","3i Group Plc","4,063.00",-22.00,-0.54%
+"ADM","Admiral Group","3,331.00",-18.00,-0.54%
+"AAF","Airtel Africa plc","242.80",-1.40,-0.57%
+"ALW","Alliance Witan plc","1,254.00",-4.00,-0.32%
+"AAL","Anglo American Plc","2,768.50",-15.00,-0.54%
+"ANTO","Antofagasta plc","2,738.50",-12.00,-0.44%
+"AHT","Ashtead Group plc","4,943.50",-18.00,-0.36%
+"ABF","Associated British Foods plc","2,049.50",-2.00,-0.10%
+"AZN","AstraZeneca plc","11,580.00",+400.00,+3.58%
+"AUTO","Auto Trader Group plc","779.30",-8.80,-1.12%
+"AV.","Aviva Plc","682.00",-3.60,-0.52%
+"BAB","Babcock International Group","1,313.00",-18.00,-1.35%
+"BA.","BAE Systems plc","2,043.00",-16.00,-0.78%
+"BARC","Barclays plc","375.90",-3.75,-0.99%
+"BTRW","Barratt Redrow Plc","390.75",+1.10,+0.28%
+"BEZ","Beazley plc","906.50",-0.50,-0.06%
+"BKG","Berkeley Group Holdings plc","3,829.00",-6.00,-0.16%
+"BP.","BP Plc","428.93",+3.10,+0.73%
+"BATS","British American Tobacco plc","3,935.00",-12.00,-0.30%
+"BT.A","BT Group plc","189.03",-2.10,-1.10%
+"BNZL","Bunzl plc","2,322.00",-24.00,-1.02%
+"BRBY","Burberry Group plc","1,173.25",+4.50,+0.39%
+"CNA","Centrica plc","167.55",+0.80,+0.48%
+"CCEP","Coca-Cola Europacific Partners Plc","6,740.00",0.00,0.00%
+"CCH","Coca-Cola HBC AG","3,468.00",-34.00,-0.97%
+"CPG","Compass Group plc","2,524.00",-5.00,-0.20%
+"CTEC","ConvaTec Group Plc","233.00",+1.60,+0.69%
+"CRDA","Croda International plc","2,728.50",+25.00,+0.92%
+"DCC","DCC plc","4,759.00",-10.00,-0.21%
+"DGE","Diageo plc","1,796.75",+22.00,+1.24%
+"DPLM","Diploma plc","5,240.00",-60.00,-1.13%
+"EZJ","easyJet plc","461.55",-2.60,-0.56%
+"EDV","Endeavour Mining plc","3,098.00",-6.00,-0.19%
+"ENT","Entain plc","853.90",-19.80,-2.27%
+"EXPN","Experian Plc","3,687.50",-35.00,-0.94%
+"FCIT","F&C Investment Trust plc","1,196.00",-7.00,-0.58%
+"FRES","Fresnillo","2,339.00",-20.00,-0.85%
+"GAW","Games Workshop Group","14,425.00",-100.00,-0.69%
+"GLEN","Glencore plc","341.07",-0.50,-0.15%
+"GSK","GSK plc","1,601.00",+27.00,+1.71%
+"HLN","Haleon plc","336.00",+3.50,+1.05%
+"HLMA","Halma plc","3,438.00",-12.00,-0.35%
+"HIK","Hikma Pharmaceuticals","1,783.00",+86.00,+5.06%
+"HSX","Hiscox Ltd","1,370.00",+2.00,+0.15%
+"HWDN","Howden Joinery Group Plc","821.25",-21.50,-2.55%
+"HSBA","HSBC Holdings plc","1,043.80",-1.20,-0.11%
+"ICG","ICG Plc","2,192.00",-28.00,-1.26%
+"IMI","IMI plc","2,276.00",-10.00,-0.44%
+"IMB","Imperial Brands Group","3,132.50",-26.00,-0.82%
+"INF","Informa plc","918.60",+0.40,+0.04%
+"IHG","InterContinental Hotels Group plc","9,014.00",+40.00,+0.45%
+"IAG","International Consolidated Airlines Group SA","382.30",-4.10,-1.06%
+"ITRK","Intertek Group plc","4,775.00",+54.00,+1.14%
+"JD.","JD Sports Fashion plc","95.92",+0.68,+0.71%
+"KGF","Kingfisher","306.25",-2.70,-0.87%
+"LAND","Land Securities Group plc","579.50",-2.50,-0.43%
+"LGEN","Legal & General Group plc","235.35",-2.60,-1.09%
+"LLOY","Lloyds Banking Group plc","83.42",-0.40,-0.48%
+"LSEG","London Stock Exchange Group plc","8,566.00",+44.00,+0.52%
+"LMP","LondonMetric Property plc","180.90",-1.00,-0.55%
+"MNG","M&G plc","251.30",-1.70,-0.67%
+"MKS","Marks & Spencer Group plc","364.35",+0.20,+0.05%
+"MRO","Melrose Industries plc","604.40",-4.00,-0.66%
+"MNDI","Mondi plc","1,025.00",+1.50,+0.15%
+"NG.","National Grid","1,075.25",+8.00,+0.75%
+"NWG","NatWest Group plc","521.10",-0.60,-0.12%
+"NXT","Next plc","12,332.50",-45.00,-0.36%
+"PSON","Pearson plc","1,054.25",-2.00,-0.19%
+"PSH","Pershing Square Holdings Ltd","4,577.00",-34.00,-0.74%
+"PSN","Persimmon plc","1,155.75",-2.00,-0.17%
+"PHNX","Phoenix Group Holdings Plc","645.50",+2.00,+0.31%
+"PCT","Polar Capital Technology Trust plc","434.50",-3.00,-0.69%
+"PRU","Prudential plc","1,040.50",-0.50,-0.05%
+"RKT","Reckitt Benckiser Group Plc","5,746.00",+28.00,+0.49%
+"REL","RELX plc","3,541.50",-15.00,-0.42%
+"RTO","Rentokil Initial Plc","372.50",-3.20,-0.85%
+"RMV","Rightmove plc","695.30",-13.60,-1.92%
+"RIO","Rio Tinto plc","4,883.75",-2.50,-0.05%
+"RR.","Rolls Royce Holdings Plc","1,173.50",-16.50,-1.39%
+"SGE","Sage Group plc","1,090.25",-10.00,-0.91%
+"SBRY","Sainsbury (J) plc","334.60",+0.60,+0.18%
+"SDR","Schroders plc","372.70",-3.20,-0.85%
+"SMT","Scottish Mortgage Investment Trust plc","1,127.75",-9.50,-0.84%
+"SGRO","Segro Plc","655.00",-0.60,-0.09%
+"SVT","Severn Trent Plc","2,606.50",+21.00,+0.81%
+"SHEL","Shell plc","2,664.25",+17.50,+0.66%
+"SN.","Smith & Nephew plc","1,350.00",+12.50,+0.93%
+"SMIN","Smiths Group Plc","2,338.00",-14.00,-0.60%
+"SPX","Spirax Group plc","6,827.50",+25.00,+0.37%
+"SSE","SSE plc"
