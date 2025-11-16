@@ -1,0 +1,24 @@
+Items Bought
+Bread, Milk, Eggs
+Bread, Butter, Cheese
+Milk, Eggs, Butter
+Bread, Milk, Butter
+Bread, Eggs, Apples
+Milk, Eggs, Cheese
+Bread, Milk, Eggs, Butter
+Milk, Butter, Bananas
+Bread, Eggs, Butter
+Milk, Eggs, Butter, Cheese
+
+Count 1 item,,,2 item,,,3 item,
+item,count,,items,count,,items,count
+B,6,,"B, M",3,,"B, M, E",2
+M,7,,"B, E",4,,"B, M, Bu",2
+E,7,,"B, Bu",4,,"B, E, Bu",2
+Bu,7,,"B, C",1,,"M, E, Bu",3
+C,3,,"M, E",5,,,
+A,1,,"M, Bu",5,,,
+,,,"M, C",2,,,
+,,,"E, Bu",4,,,
+,,,"E, C",2,,,
+,,,"Bu, C",2,,,
